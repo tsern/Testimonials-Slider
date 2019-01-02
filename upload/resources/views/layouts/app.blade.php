@@ -12,7 +12,7 @@
     <!-- Scripts -->
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{--<script src="{{ asset('js/app.js') }}" defer></script>--}}
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -80,5 +80,39 @@
             @yield('content')
         </main>
     </div>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            text-align: center;
+        }
+        #app {
+            width: 800px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .container {
+            width: 100%;
+        }
+        .content {
+            min-width: 100%;
+        }
+        .table {
+            border-top: 2px solid #ccc;
+        }
+        .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+            float: left;
+            margin-left: 400px;
+        }
+        .caret{
+            display: none;
+        }
+        .form-check input[type=checkbox] {
+            margin: 4px 0px 0px -20px;
+        }
+    </style>
 </body>
 </html>

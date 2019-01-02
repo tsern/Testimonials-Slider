@@ -24,23 +24,19 @@ class CreateTestimonialsTable extends Migration
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->integer('user_id')->nullable();
+            $table->unsignedInteger('user_id')->nullable();
             $table->string('title', 100);
             $table->string('text')->nullable();
-            $table->integer('period_id');
-
-            $table->index(["period_id"], 'fk_testimonials_1_idx');
-
-            $table->index(["user_id"], 'fk_testimonials_2_idx');
+            $table->unsignedInteger('period_id');
         });
 
         Schema::table($this->set_schema_table, function ($table) {
-            $table->foreign('user_id', 'fk_testimonials_2_idx')
+            $table->foreign('user_id')
                 ->references('id')->on('users')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
 
-            $table->foreign('period_id', 'fk_testimonials_1_idx')
+            $table->foreign('period_id')
                 ->references('id')->on('period')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');

@@ -17,5 +17,19 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+//Admin routes
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
+    Route::get('login', 'LoginController@index');
+    Route::post('login', 'LoginController@login')->name('admin.login');
+
+//    Route::group(['middleware' => 'admin'], function () {
+//        Route::get('/', 'DashboardController')->name('admin.dashboard');
+//    });
+});
+
+//Site routes
+//Route::group(['namespace' => 'Site'], function() {
+    Route::get('/', 'HomeController@index')->name('home');
+//});
+
 Route::get('/home', 'HomeController@index')->name('home');

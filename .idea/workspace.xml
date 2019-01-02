@@ -2,117 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc2ea79-f358-4420-bfc1-3755faa4e607" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ts.loc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DB/testimonials_slider.mwb.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000002_create_roles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/upload/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DB/testimonials_slider.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/DB/testimonials_slider.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/upload/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/upload/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/upload/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/app/Http/Middleware/CheckIfAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload/app/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/bootstrap/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/bootstrap/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/upload/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/upload/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/broadcasting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/hashing.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/hashing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/logging.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/logging.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/mail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/queue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/config/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/database/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/factories/UserFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/upload/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/upload/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/svg/403.svg" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/svg/403.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/svg/404.svg" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/svg/404.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/svg/500.svg" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/svg/500.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/svg/503.svg" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/svg/503.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/public/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/upload/public/web.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/upload/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/lang/en/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/lang/en/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/lang/en/pagination.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/lang/en/passwords.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/lang/en/passwords.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/routes/channels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/routes/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000002_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000002_create_roles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/server.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/storage/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/storage/app/public/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/storage/app/public/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/storage/framework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/storage/framework/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/storage/framework/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/storage/framework/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/storage/framework/cache/data/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/storage/framework/sessions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/storage/framework/testing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/storage/framework/testing/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/storage/framework/views/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/storage/framework/views/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/storage/logs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/upload/storage/logs/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/tests/CreatesApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/upload/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,56 +26,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/RegisterController.php">
+        <entry file="file://$PROJECT_DIR$/upload/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="65" column="4" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/resources/views/auth/login.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload/database/migrations/2014_10_12_000000_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            <state relative-caret-position="358">
+              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/database/factories/UserFactory.php">
+        <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="40" />
+            <state relative-caret-position="291">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/upload/app/Role.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-62" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/resources/views/auth/register.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="14" column="105" selection-start-line="14" selection-start-column="105" selection-end-line="14" selection-end-column="105" />
+            <state relative-caret-position="150">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Controller.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/upload/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+              <folding>
+                <element signature="e#23#63#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -184,13 +79,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/app/Providers/AuthServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000002_create_roles_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/app/Providers/BroadcastServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-225" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-74">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -208,14 +127,19 @@
       <list>
         <option value="$PROJECT_DIR$/upload/.env" />
         <option value="$PROJECT_DIR$/upload/.env.example" />
-        <option value="$PROJECT_DIR$/upload/routes/web.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" />
-        <option value="$PROJECT_DIR$/upload/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="$PROJECT_DIR$/upload/app/User.php" />
         <option value="$PROJECT_DIR$/upload/database/factories/UserFactory.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/upload/app/Role.php" />
+        <option value="$PROJECT_DIR$/upload/app/Http/Middleware/CheckIfAdmin.php" />
+        <option value="$PROJECT_DIR$/upload/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/upload/routes/web.php" />
+        <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" />
+        <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000002_create_roles_table.php" />
+        <option value="$PROJECT_DIR$/upload/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php" />
+        <option value="$PROJECT_DIR$/upload/app/User.php" />
       </list>
     </option>
   </component>
@@ -318,10 +242,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="137" />
-    <option name="y" value="325" />
-    <option name="width" value="880" />
-    <option name="height" value="691" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="767" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -376,14 +300,20 @@
               <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
@@ -402,43 +332,20 @@
               <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="passwords" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="composer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -486,17 +393,26 @@
       <updated>1546187648611</updated>
       <workItem from="1546187649854" duration="5199000" />
       <workItem from="1546193942407" duration="781000" />
-      <workItem from="1546194873211" duration="5395000" />
+      <workItem from="1546194873211" duration="18064000" />
     </task>
+    <task id="LOCAL-00001" summary="authentication is implemented">
+      <created>1546205689821</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546205689822</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11375000" />
+    <option name="totallyTimeSpent" value="24044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28850034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2669805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -509,7 +425,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -530,11 +446,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/RegisterController.php</url>
-          <line>65</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php</url>
           <line>14</line>
           <option name="timeStamp" value="2" />
@@ -543,6 +454,11 @@
           <url>file://$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php</url>
           <line>24</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/RegisterController.php</url>
+          <line>77</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -566,9 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/routes/api.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -578,18 +491,8 @@
     <entry file="file://$PROJECT_DIR$/upload/routes/console.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/app/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/config/auth.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/ForgotPasswordController.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -606,23 +509,6 @@
         <state relative-caret-position="135">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/resources/views/home.blade.php">
@@ -649,9 +535,6 @@
     <entry file="file://$PROJECT_DIR$/upload/.editorconfig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000002_create_roles_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/VerificationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-137">
@@ -668,25 +551,12 @@
     <entry file="file://$PROJECT_DIR$/upload/app/Providers/BroadcastServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/database/factories/UserFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="40" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -700,10 +570,115 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Middleware/CheckForMaintenanceMode.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Middleware/EncryptCookies.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Middleware/TrimStrings.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Providers/Role.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Middleware/CheckIfAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding>
+            <element signature="e#119#131#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/config/logging.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000002_create_roles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="65" column="4" lean-forward="true" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        <state relative-caret-position="291">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+          <folding>
+            <element signature="e#23#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
         </state>
       </provider>
     </entry>

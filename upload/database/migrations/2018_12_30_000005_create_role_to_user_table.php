@@ -23,14 +23,24 @@ class CreateRoleToUserTable extends Migration
         if (Schema::hasTable($this->set_schema_table)) return;
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->increments('id');
-            $table->integer('role_id')->nullable();
-            $table->integer('user_id')->nullable();
-
-            $table->index(["role_id"], 'fk_role_to_user_2_idx');
-
-            $table->index(["user_id"], 'fk_role_to_user_1_idx');
+            $table->integer('role_id')->unsigned();
+            $table->integer('user_id')->unsigned();
         });
+
+        Schema::table($this->set_schema_table, function ($table) {
+            $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            $table->primary(['user_id', 'role_id']);
+        });
+
+        // Insert some stuff
+        DB::table($this->set_schema_table)->insert(
+            array(
+                'role_id' => 1,
+                'user_id' => 1,
+            )
+        );
     }
 
     /**

@@ -28,6 +28,18 @@ class CreateRolesTable extends Migration
 
             $table->unique(["role_name"], 'role_name_UNIQUE');
         });
+
+        // Insert some stuff
+        DB::table($this->set_schema_table)->insert(
+            array(
+                'role_name' => 'admin'
+            )
+        );
+        DB::table($this->set_schema_table)->insert(
+            array(
+                'role_name' => 'user'
+            )
+        );
     }
 
     /**

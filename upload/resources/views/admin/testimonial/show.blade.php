@@ -3,7 +3,7 @@
 
     <div class="col-md-9">
         <div class="panel panel-default">
-            <div class="panel-heading"style="background-color:  #095f59;>
+            <div class="panel-heading" style="background-color:  #095f59">
             <h3 class="panel-title">All Testimonials</h3>
         </div>
         <div class="panel-body">
@@ -18,11 +18,11 @@
                     </thead>
                     <tbody>
                     @if($testimonials->count())
-                        @foreach($testimonials as $testimonials)
+                        @foreach($testimonials as $testimonial)
                             <tr>
-                                <td>{{$testimonials->title}}</td>
-                                <td>{{$testimonials->user_id}}</td>
-                                <td>{{$testimonials->period_id}}</td>
+                                <td>{{$testimonial->title}}</td>
+                                <td>{{$testimonial->user_id}}</td>
+                                <td>{{$testimonial->period_id}}</td>
                             </tr>
                         @endforeach
                     @else

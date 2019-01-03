@@ -82,8 +82,7 @@
                 </div>
                 <div class="col-md-2">
                     <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Create Content
-                            <span class="caret"></span></button>
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Create Content</button>
                         <ul class="dropdown-menu">
                             <li><a href="#">Add Testimonials</a></li>
                             <li><a href="#">Add Images</a></li>
@@ -106,8 +105,7 @@
                                 active
                          @endif
                                 "><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                            Dashboard <span class="badge">12</span>
-                        </a>
+                            Dashboard</a>
                         <a href="/admin/testimonials" class="list-group-item
                           @if($indexActiveView == 1)
                                 active

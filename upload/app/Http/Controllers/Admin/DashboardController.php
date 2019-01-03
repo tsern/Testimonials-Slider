@@ -8,7 +8,7 @@ class DashboardController extends Controller
 {
     public function show()
     {
-        return view('admin.Dashboard.show');
+        return view('admin.dashboard');
     }
 
 }

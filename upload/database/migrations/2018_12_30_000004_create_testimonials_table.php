@@ -27,6 +27,7 @@ class CreateTestimonialsTable extends Migration
             $table->unsignedInteger('user_id')->nullable();
             $table->string('title', 100);
             $table->string('text')->nullable();
+            $table->string('img_url');
             $table->unsignedInteger('period_id');
         });
 
@@ -41,6 +42,28 @@ class CreateTestimonialsTable extends Migration
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
         });
+
+
+        // Insert some stuff
+        DB::table($this->set_schema_table)->insert(
+            array(
+                'user_id' => 1,
+                'title' => 'Some text',
+                'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                'img_url' => 'http://www.reactiongifs.com/r/overbite.gif',
+                'period_id' => 1
+            )
+        );
+
+        DB::table($this->set_schema_table)->insert(
+            array(
+                'user_id' => 2,
+                'title' => 'Some text',
+                'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.',
+                'img_url' => 'https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg',
+                'period_id' => 1
+            )
+        );
     }
 
     /**

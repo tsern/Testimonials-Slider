@@ -27,6 +27,14 @@ class CreatePeriodTable extends Migration
             $table->dateTime('start_date');
             $table->dateTime('end_date');
         });
+
+        DB::table($this->set_schema_table)->insert(
+            array(
+                'id' => 1,
+                'start_date' => '01.01.2019',
+                'end_date' => '02.01.2019',
+            )
+        );
     }
 
     /**

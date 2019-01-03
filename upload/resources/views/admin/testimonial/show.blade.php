@@ -7,35 +7,32 @@
             <h3 class="panel-title">All Testimonials</h3>
         </div>
         <div class="panel-body">
-            <table class="table table-striped table-hover">
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Joined</th>
-                </tr>
+            {{--<table class="table table-striped table-hover">--}}
 
-                <tr>
-                    <td>Madhav Prasad</td>
-                    <td>mr.madhavprasad@gmail.com</td>
-                    <td>Dec 13,2014</td>
-                </tr>
-                <tr>
-                    <td>Nagendra Kushwaha</td>
-                    <td>nkushwaha822@gmail.com</td>
-                    <td>Feb 15,2014</td>
-                </tr>
-                <tr>
-                    <td>Arun Kumar</td>
-                    <td>kumarun@yahoo.com</td>
-                    <td>Aug 17, 2015</td>
-                </tr>
-                <tr>
-                    <td>Nabin Singh</td>
-                    <td>singhNavs@outlook.com</td>
-                    <td>March 08,2016</td>
-                </tr>
-            </table>
+            <div class="table-container">
+                <table id="mytable" class="table table-bordred table-striped">
+                    <thead>
+                        <th>Testimonial Title</th>
+                        <th>Author</th>
+                        <th>Date</th>
+                    </thead>
+                    <tbody>
+                    @if($testimonials->count())
+                        @foreach($testimonials as $testimonials)
+                            <tr>
+                                <td>{{$testimonials->title}}</td>
+                                <td>{{$testimonials->user_id}}</td>
+                                <td>{{$testimonials->period_id}}</td>
+                            </tr>
+                        @endforeach
+                    @else
+                        <tr>
+                            <td colspan="7">No Records found !!</td>
+                        </tr>
+                    @endif
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
 
 @endsection

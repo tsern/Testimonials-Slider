@@ -8,8 +8,20 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 
-class TestimonialsController
+use App\Testimonial;
+
+
+class TestimonialsController extends Controller
 {
+    public function show()
+    {
+        $testimonials = Testimonial::all();
+        return view('admin.testimonial.show',
+        ['testimonials' => $testimonials,
+         'viewTitle' => 'Testimonials',
+         'indexActiveView' => 1]);
+    }
 
 }

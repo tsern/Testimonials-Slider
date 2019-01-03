@@ -42,5 +42,7 @@ Route::group(
     ],
     function(){
         Route::get('/',['as' => 'dashboard','uses' => 'DashboardController@show']);
+        Route::get('/testimonials/',['as' => 'testimonials','uses' => 'TestimonialsController@show']);
     }
+
 );

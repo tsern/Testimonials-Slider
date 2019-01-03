@@ -8,7 +8,9 @@ class DashboardController extends Controller
 {
     public function show()
     {
-        return view('admin.dashboard');
+        return view('admin.dashboard',
+            ['viewTitle' => 'Dashboard',
+             'indexActiveView' => 0]);
     }
 
 }

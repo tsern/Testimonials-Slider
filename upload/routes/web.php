@@ -17,8 +17,8 @@
 
 Auth::routes();
 
-////Admin routes
-//Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
+////admin routes
+//Route::group(['prefix' => 'admin', 'namespace' => 'admin'], function() {
 //    Route::get('login', 'LoginController@index');
 //    Route::post('login', 'LoginController@login')->name('admin.login');
 //
@@ -33,3 +33,14 @@ Auth::routes();
 //});
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(
+    [
+        'prefix' => 'admin',
+        'namespace' => 'Admin',
+        'as' => 'Admin.',
+    ],
+    function(){
+        Route::get('/',['as' => 'dashboard','uses' => 'DashboardController@show']);
+    }
+);

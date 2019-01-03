@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afc2ea79-f358-4420-bfc1-3755faa4e607" name="Default Changelist" comment="authentication is implemented">
+      <change afterPath="$PROJECT_DIR$/upload/resources/views/admin/Dashboard/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload/app/Http/Middleware/CheckIfAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Middleware/CheckIfAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Testimonial.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Testimonial.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,22 +21,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/app/Testimonial.php">
+        <entry file="file://$PROJECT_DIR$/upload/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="169">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/app/User.php">
+        <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Admin/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-              <folding>
-                <element signature="e#23#63#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Dashboard/show.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -46,7 +50,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="450">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#40#60#0#PHP" expanded="true" />
@@ -55,29 +59,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/ForgotPasswordController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+              <folding>
+                <element signature="e#45#81#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/upload/resources/views/home.blade.php">
+        <entry file="file://$PROJECT_DIR$/upload/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+            <state relative-caret-position="465">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -142,7 +140,6 @@
         <option value="$PROJECT_DIR$/upload/app/User.php" />
         <option value="$PROJECT_DIR$/upload/app/Testimonial.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Controllers/TestimonialSliderController.php" />
-        <option value="$PROJECT_DIR$/upload/routes/web.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Middleware/Authenticate.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Middleware/CheckIfAdmin.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Kernel.php" />
@@ -151,6 +148,10 @@
         <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php" />
         <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/upload/app/Http/Controllers/AdminDashboardController.php" />
+        <option value="$PROJECT_DIR$/upload/resources/views/admin/show.blade.php" />
+        <option value="$PROJECT_DIR$/upload/app/Http/Controllers/Admin/DashboardController.php" />
+        <option value="$PROJECT_DIR$/upload/routes/web.php" />
       </list>
     </option>
   </component>
@@ -253,9 +254,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="786" />
+    <option name="x" value="344" />
+    <option name="y" value="92" />
+    <option name="width" value="776" />
     <option name="height" value="654" />
   </component>
   <component name="ProjectView">
@@ -264,7 +265,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -305,33 +305,16 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
@@ -350,12 +333,21 @@
               <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,6 +357,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/upload/resources/views/Admin/Dashboard" />
+      <recent name="$PROJECT_DIR$/upload/app/Http/Controllers" />
+      <recent name="$PROJECT_DIR$/upload/app/Http/Controllers/Auth/Admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/upload" />
     </key>
@@ -401,6 +398,7 @@
       <workItem from="1546194873211" duration="24495000" />
       <workItem from="1546449382013" duration="14565000" />
       <workItem from="1546499645408" duration="37000" />
+      <workItem from="1546499712480" duration="3252000" />
     </task>
     <task id="LOCAL-00001" summary="authentication is implemented">
       <created>1546205689821</created>
@@ -413,16 +411,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45077000" />
+    <option name="totallyTimeSpent" value="48329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29858777" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1721587" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.23190348" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -431,7 +429,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.46782842" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.6647619" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -466,12 +464,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/upload/routes/channels.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/routes/console.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/config/auth.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -523,13 +515,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/TestimonialSliderController.php" />
     <entry file="file://$PROJECT_DIR$/upload/resources/views/welcome.blade.php" />
-    <entry file="file://$PROJECT_DIR$/upload/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/app/Http/Middleware/EncryptCookies.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -575,11 +560,6 @@
         <state relative-caret-position="60">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/ForgotPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/LoginController.php">
@@ -668,16 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="e#40#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -718,8 +688,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/upload/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        <state relative-caret-position="169">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Auth/ForgotPasswordController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#45#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#40#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Dashboard/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Admin/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
         </state>
       </provider>
     </entry>

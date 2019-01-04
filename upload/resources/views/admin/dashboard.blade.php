@@ -40,32 +40,27 @@
         </div>
     <div class="panel-body">
         <table class="table table-striped table-hover">
-            <tr>
+            <thead>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Joined</th>
-            </tr>
+            </thead>
 
-            <tr>
-                <td>Madhav Prasad</td>
-                <td>mr.madhavprasad@gmail.com</td>
-                <td>Dec 13,2014</td>
-            </tr>
-            <tr>
-                <td>Nagendra Kushwaha</td>
-                <td>nkushwaha822@gmail.com</td>
-                <td>Feb 15,2014</td>
-            </tr>
-            <tr>
-                <td>Arun Kumar</td>
-                <td>kumarun@yahoo.com</td>
-                <td>Aug 17, 2015</td>
-            </tr>
-            <tr>
-                <td>Nabin Singh</td>
-                <td>singhNavs@outlook.com</td>
-                <td>March 08,2016</td>
-            </tr>
+            <tbody>
+                @if($users->count())
+                    @foreach($users as $user)
+                        <tr>
+                            <td>{{$user->name}}</td>
+                            <td>{{$user->email}}</td>
+                            <td>{{$user->created_at}}</td>
+                        </tr>
+                    @endforeach
+                @else
+                    <tr>
+                        <td colspan="7">No Records found!!!</td>
+                    </tr>
+                @endif
+            </tbody>
         </table>
     </div>
 </div>

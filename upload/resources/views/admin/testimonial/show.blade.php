@@ -7,16 +7,13 @@
             <h3 class="panel-title">All Testimonials</h3>
         </div>
         <div class="panel-body">
-            {{--<table class="table table-striped table-hover">--}}
-
-            <div class="table-container">
-                <table id="mytable" class="table table-bordred table-striped">
-                    <thead>
-                        <th>Testimonial Title</th>
-                        <th>Author</th>
-                        <th>Date</th>
-                    </thead>
-                    <tbody>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <th>Testimonial Title</th>
+                    <th>Author</th>
+                    <th>Date</th>
+                </thead>
+                <tbody>
                     @if($testimonials->count())
                         @foreach($testimonials as $testimonial)
                             <tr>
@@ -30,9 +27,8 @@
                             <td colspan="7">No Records found !!</td>
                         </tr>
                     @endif
-                    </tbody>
-                </table>
-            </div>
+                </tbody>
+            </table>
         </div>
-
+    </div>
 @endsection

@@ -54,12 +54,12 @@
                             @if($indexActiveView == 2)
                             class="active"
                             @endif
-                    ><a href="posts.html">Images</a></li>
+                    ><a href="/admin/images">Images</a></li>
                     <li
                             @if($indexActiveView == 3)
                             class="active"
                             @endif
-                    ><a href="users.html">Users</a></li>
+                    ><a href="/admin/users">Users</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">

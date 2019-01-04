@@ -13,7 +13,7 @@ class DashboardController extends Controller
         $users = User::all();
         return view('admin.dashboard',
             ['users' => $users,
-                'viewTitle' => 'Dashboard',
+             'viewTitle' => 'Dashboard',
              'indexActiveView' => 0]);
     }
 

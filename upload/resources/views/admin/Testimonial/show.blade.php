@@ -32,3 +32,21 @@
         </div>
     </div>
 @endsection
+
+{{--@extends('layouts.admin')--}}
+
+{{--@section('content')--}}
+    {{--<div class="col-md-9">--}}
+        {{--<div class="panel panel-default">--}}
+            {{--<div class="panel-heading" style="background-color:  #095f59">--}}
+                {{--<h3 class="panel-title">All Testimonials</h3>--}}
+            {{--</div>--}}
+            {{--<div class="panel-body">--}}
+                {{--<table class="table table-striped table-hover">--}}
+                    {{--<a href="{{ route('Testimonial.index') }}" class="btn btn-info btn-block" >Back</a>--}}
+                {{--</table>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
+
+{{--@endsection--}}

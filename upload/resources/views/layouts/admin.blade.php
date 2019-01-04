@@ -84,7 +84,7 @@
                     <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Create Content</button>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Add Testimonials</a></li>
+                            <li><a href="/admin/testimonials/create/">Add Testimonials</a></li>
                             <li><a href="#">Add Images</a></li>
                             <li><a href="#">Add Users</a></li>
                         </ul>

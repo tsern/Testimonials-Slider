@@ -17,6 +17,7 @@ Route::group(
     function(){
         Route::get('/',['as' => 'dashboard','uses' => 'DashboardController@show']);
         Route::get('/testimonials/',['as' => 'testimonials','uses' => 'TestimonialsController@index']);
+        Route::get('/testimonials/create',['as' => 'testimonials/create','uses' => 'TestimonialsController@create']);
         Route::get('/users/',['as' => 'users','uses' => 'UserController@show']);
         Route::get('/images/',['as' => 'images','uses' => 'ImageController@show']);
     });
@@ -25,4 +26,4 @@ Route::group(
 //        Route::get('/', 'DashboardController')->name('admin.dashboard');
 //    });
 
-Route::resource('admin/testimonial','TestimonialController');
+Route::resource('testimonial','TestimonialsController');

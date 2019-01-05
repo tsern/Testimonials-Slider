@@ -87,4 +87,17 @@ class TestimonialsController extends Controller
             ->with('success', 'Testimonial created successfully');
     }
 
+    public function edit($id)
+    {
+        if (!Auth::check())
+        {
+            return redirect()->guest('login');
+        }
+
+        Testimonial::find($id);
+        return view('admin.testimonials.edit',
+            ['viewTitle' => 'Testimonials',
+            'indexActiveView' => 1]);
+    }
+
 }

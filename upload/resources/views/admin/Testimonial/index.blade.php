@@ -28,9 +28,9 @@
                                 <td>{{$testimonial->status}}</td>
                                 <td>{{$testimonial->start_date}}</td>
                                 <td>{{$testimonial->end_date}}</td>
-                                <td><a class="btn btn-primary btn-xs" href="{{action('TestimonialController@edit', $testimonial->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
+                                <td><a class="btn btn-primary btn-xs" href="{{action('TestimonialsController@edit', $testimonial->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
                                 <td>
-                                    <form action="{{action('TestimonialController@destroy', $testimonial->id)}}" method="post">
+                                    <form action="{{action('TestimonialsController@destroy', $testimonial->id)}}" method="post">
                                         {{csrf_field()}}
                                         <input name="_method" type="hidden" value="DELETE">
                                         <button class="btn btn-danger btn-xs" type="submit"><span class="glyphicon glyphicon-trash"></span></button>

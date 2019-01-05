@@ -24,7 +24,7 @@
                             <tr>
                                 <td><input type="checkbox" class="checkthis" /></td>
                                 <td>{{$testimonial->id}}</td>
-                                <td>{{$testimonial->tite}}</td>
+                                <td>{{$testimonial->title}}</td>
                                 <td>{{$testimonial->status}}</td>
                                 <td>{{$testimonial->start_date}}</td>
                                 <td>{{$testimonial->end_date}}</td>

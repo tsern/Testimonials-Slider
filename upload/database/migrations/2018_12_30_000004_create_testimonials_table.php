@@ -28,20 +28,23 @@ class CreateTestimonialsTable extends Migration
             $table->string('title', 100);
             $table->string('text')->nullable();
             $table->string('img_url');
-            $table->unsignedInteger('period_id');
+            $table->boolean('status')->default(true);
+            $table->dateTime('start_date')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->dateTime('end_date')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamps();
         });
 
-        Schema::table($this->set_schema_table, function ($table) {
-            $table->foreign('user_id')
-                ->references('id')->on('users')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
+//        Schema::table($this->set_schema_table, function ($table) {
+//            $table->foreign('user_id')
+//                ->references('id')->on('users')
+//                ->onDelete('cascade')
+//                ->onUpdate('cascade');
 
-            $table->foreign('period_id')
-                ->references('id')->on('period')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
-        });
+//            $table->foreign('period_id')
+//                ->references('id')->on('period')
+//                ->onDelete('cascade')
+//                ->onUpdate('cascade');
+//        });
 
 
         // Insert some stuff
@@ -51,7 +54,9 @@ class CreateTestimonialsTable extends Migration
                 'title' => 'Some text',
                 'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                 'img_url' => 'http://www.reactiongifs.com/r/overbite.gif',
-                'period_id' => 1
+                'status' => '1',
+                'start_date' => '01.01.2019',
+                'end_date' => '12.01.2019',
             )
         );
 
@@ -61,7 +66,7 @@ class CreateTestimonialsTable extends Migration
                 'title' => 'Some text',
                 'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.',
                 'img_url' => 'https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg',
-                'period_id' => 1
+
             )
         );
     }

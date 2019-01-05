@@ -90,7 +90,20 @@ class TestimonialsController extends Controller
 
     public function update(Request $request, $id)
     {
+        $user_id = Auth::id();
 
+        $this->validate($request, [
+            'title' => 'required'
+        ]);
+
+        $allFields = $request->all();
+        $allFields['user_id'] = $user_id;
+        $allFields['start_date'] = date('Y-m-d G:i:s');
+        $allFields['end_date'] = date('Y-m-d G:i:s');
+
+        $result = Testimonial::find($id)->update($allFields);
+        return redirect()->route('testimonials.index')
+            ->with('success','Testimonial updated successfully');
     }
 
     public function edit($id)
@@ -109,7 +122,9 @@ class TestimonialsController extends Controller
 
     public function destroy($id)
     {
-
+        Testimonial::find($id)->delete();
+        return redirect()->route('testimonials.index')
+            ->with('success', 'Task deleted successfully');
     }
 
 }

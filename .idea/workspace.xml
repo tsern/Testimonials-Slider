@@ -4,11 +4,12 @@
     <list default="true" id="afc2ea79-f358-4420-bfc1-3755faa4e607" name="Default Changelist" comment="authentication is implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonial/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonial/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonial/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonial/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,19 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/app/Testimonial.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="106" column="45" selection-start-line="106" selection-start-column="45" selection-end-line="106" selection-end-column="45" />
+            <state relative-caret-position="154">
+              <caret line="100" column="54" lean-forward="true" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="54" />
               <folding>
                 <element signature="e#126#162#0#PHP" expanded="true" />
               </folding>
@@ -42,65 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/user.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3681">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="360">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/show.blade.php">
+        <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="32" column="92" lean-forward="true" selection-start-line="32" selection-start-column="89" selection-end-line="32" selection-end-column="96" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
+            <state relative-caret-position="664">
+              <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -120,8 +67,8 @@
       <find>Class App\Http\Controllers\TestimonialsController</find>
       <find>TestimonialsController</find>
       <find>$testimonials</find>
-      <find>admin.testimonial.update</find>
       <find>picker</find>
+      <find>admin.testimonial.update</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,7 +94,6 @@
         <option value="$PROJECT_DIR$/upload/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php" />
-        <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Controllers/AdminDashboardController.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/admin/show.blade.php" />
@@ -166,7 +112,6 @@
         <option value="$PROJECT_DIR$/upload/resources/views/admin/testimonial/index.blade.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/admin/testimonial/create.blade.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/admin/testimonial/show.blade.php" />
-        <option value="$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/admin/Testimonial/show.blade.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Controllers/TestimonialsController.php" />
@@ -174,9 +119,12 @@
         <option value="$PROJECT_DIR$/upload/resources/views/admin/Testimonial/index.blade.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/admin/Testimonial/create.blade.php" />
         <option value="$PROJECT_DIR$/upload/routes/web.php" />
-        <option value="$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php" />
+        <option value="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/index.blade.php" />
+        <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php" />
+        <option value="$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php" />
+        <option value="$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php" />
       </list>
     </option>
   </component>
@@ -279,10 +227,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="274" />
-    <option name="y" value="317" />
-    <option name="width" value="1057" />
-    <option name="height" value="654" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1533" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -336,32 +284,6 @@
               <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
               <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
               <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -402,27 +324,6 @@
               <item name="upload" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ts.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ts.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -462,7 +363,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="http://ts.loc/" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="ts.loc">
+    <configuration name="http://ts.loc/" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="ts.loc" start_url="/admin/">
       <method v="2" />
     </configuration>
   </component>
@@ -481,7 +382,7 @@
       <workItem from="1546194873211" duration="24495000" />
       <workItem from="1546449382013" duration="14565000" />
       <workItem from="1546499645408" duration="37000" />
-      <workItem from="1546499712480" duration="64792000" />
+      <workItem from="1546499712480" duration="76159000" />
     </task>
     <task id="LOCAL-00001" summary="authentication is implemented">
       <created>1546205689821</created>
@@ -494,20 +395,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109869000" />
+    <option name="totallyTimeSpent" value="121236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16341628" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30195025" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.22922252" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3994638" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -549,17 +450,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/upload/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-555" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/app/Http/Middleware/RedirectIfAuthenticated.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -591,44 +481,10 @@
     <entry file="file://$PROJECT_DIR$/upload/app/Providers/Image.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2014_10_12_100000_create_password_resets_table.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000002_create_roles_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2019_01_04_122137_create_images_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,20 +563,6 @@
           <folding>
             <element signature="e#40#85#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="62" column="94" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="83" column="27" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -818,55 +660,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3681">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/app/Testimonial.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="106" column="45" selection-start-line="106" selection-start-column="45" selection-end-line="106" selection-end-column="45" />
-          <folding>
-            <element signature="e#126#162#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="32" column="92" lean-forward="true" selection-start-line="32" selection-start-column="89" selection-end-line="32" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -877,10 +674,127 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2019_01_04_122137_create_images_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000005_create_role_to_user_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+          <folding>
+            <element signature="e#155#189#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/vendor/laravel/framework/src/Illuminate/Routing/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="719" column="56" lean-forward="true" selection-start-line="719" selection-start-column="56" selection-end-line="719" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="100" column="54" lean-forward="true" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="54" />
+          <folding>
+            <element signature="e#126#162#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+        <state relative-caret-position="664">
+          <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>

@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afc2ea79-f358-4420-bfc1-3755faa4e607" name="Default Changelist" comment="authentication is implemented">
+    <list default="true" id="afc2ea79-f358-4420-bfc1-3755faa4e607" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000003_create_period_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,20 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="560">
+              <caret line="287" column="12" selection-start-line="287" selection-start-column="12" selection-end-line="287" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
+            <state relative-caret-position="379">
+              <caret line="112" column="27" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -69,6 +64,7 @@
       <find>$testimonials</find>
       <find>picker</find>
       <find>admin.testimonial.update</find>
+      <find>datetimepicker1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,8 +119,8 @@
         <option value="$PROJECT_DIR$/upload/database/migrations/2018_12_30_000004_create_testimonials_table.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/edit.blade.php" />
         <option value="$PROJECT_DIR$/upload/app/Http/Controllers/Admin/TestimonialsController.php" />
-        <option value="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php" />
         <option value="$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php" />
+        <option value="$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php" />
       </list>
     </option>
   </component>
@@ -382,7 +378,7 @@
       <workItem from="1546194873211" duration="24495000" />
       <workItem from="1546449382013" duration="14565000" />
       <workItem from="1546499645408" duration="37000" />
-      <workItem from="1546499712480" duration="76159000" />
+      <workItem from="1546499712480" duration="77937000" />
     </task>
     <task id="LOCAL-00001" summary="authentication is implemented">
       <created>1546205689821</created>
@@ -395,13 +391,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121236000" />
+    <option name="totallyTimeSpent" value="123014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30195025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23335575" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" weight="0.3297587" />
@@ -784,17 +780,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
+        <state relative-caret-position="560">
+          <caret line="287" column="12" selection-start-line="287" selection-start-column="12" selection-end-line="287" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload/resources/views/layouts/admin.blade.php">
+    <entry file="file://$PROJECT_DIR$/upload/resources/views/admin/Testimonials/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="379">
+          <caret line="112" column="27" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
         </state>
       </provider>
     </entry>

@@ -77,13 +77,44 @@
 
             </div>
     </div>
-            <script type="text/javascript">
-                $('.picker').dateTimePicker({
-                    dateFormat: "YYYY-MM-DD HH:mm"
-                });
 
-            </script>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group date" id="datetimepicker1">
+                            <input type="text" class="form-control" />
+                            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="input-group date" id="datetimepicker2">
+                            <input type="text" class="form-control" />
+                            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script>
+    $(document).ready(function(){
+        $('#datetimepicker1').datetimepicker();
+        $('#datetimepicker2').datetimepicker();
+    });
+
+</script>
+
     </div>
 @endsection
 

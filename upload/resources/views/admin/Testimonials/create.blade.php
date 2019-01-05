@@ -50,14 +50,14 @@
                     </div>
 
                     <div class="form-group">Start Date:
-                        <div id="picker"> </div>
+                        <div class="picker"> </div>
                     {{--<input type="hidden" id="result" value="">--}}
                     </div>
 
-                    {{--<div class="form-group">End Date:--}}
-                        {{--<div class="picker"> </div>--}}
+                    <div class="form-group">End Date:
+                        <div class="picker"> </div>
                         {{--<input type="hidden" id="result" value="">--}}
-                    {{--</div>--}}
+                    </div>
 
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
@@ -70,7 +70,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <input type="submit"  value="Save" class="btn btn-success btn-block">
-                            <a href="{{ route('testimonial.index') }}" class="btn btn-info btn-block">Cancel</a>
+                            <a href="{{ route('testimonials.index') }}" class="btn btn-info btn-block">Cancel</a>
                         </div>
                     </div>
                 </table>
@@ -78,9 +78,10 @@
             </div>
     </div>
             <script type="text/javascript">
-                $('#picker').dateTimePicker({
+                $('.picker').dateTimePicker({
                     dateFormat: "YYYY-MM-DD HH:mm"
                 });
+
             </script>
         </section>
     </div>

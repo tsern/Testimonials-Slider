@@ -43,7 +43,7 @@
             {{--</div>--}}
             {{--<div class="panel-body">--}}
                 {{--<table class="table table-striped table-hover">--}}
-                    {{--<a href="{{ route('Testimonial.index') }}" class="btn btn-info btn-block" >Back</a>--}}
+                    {{--<a href="{{ route('Testimonials.index') }}" class="btn btn-info btn-block" >Back</a>--}}
                 {{--</table>--}}
             {{--</div>--}}
         {{--</div>--}}

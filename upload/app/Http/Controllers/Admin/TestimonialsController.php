@@ -29,7 +29,7 @@ class TestimonialsController extends Controller
 
         $testimonials = Testimonial::all();
 
-        return view('admin.Testimonial.index',
+        return view('admin.Testimonials.index',
             ['testimonials' => $testimonials,
                 'viewTitle' => 'Testimonials',
                 'indexActiveView' => 1]);
@@ -37,7 +37,7 @@ class TestimonialsController extends Controller
 
     public function create()
     {
-        return view('admin.Testimonial.create',
+        return view('admin.Testimonials.create',
             [  'viewTitle' => 'Testimonials',
                 'indexActiveView' => 1]);
     }
@@ -49,13 +49,13 @@ class TestimonialsController extends Controller
 //////            return redirect()->guest('login');
 //////        }
 ////
-////        $testimonials = Testimonial::all();
-////        return view('Testimonial.show', compact('testimonials'));
+////        $testimonials = Testimonials::all();
+////        return view('Testimonials.show', compact('testimonials'));
 //    }
     public function show()
     {
         $testimonials = Testimonial::all();
-        return view('admin.Testimonial.show',
+        return view('admin.Testimonials.show',
         ['testimonials' => $testimonials,
          'viewTitle' => 'Testimonials',
          'indexActiveView' => 1]);
@@ -82,9 +82,15 @@ class TestimonialsController extends Controller
 
         Testimonial::create($allFields);
 
-        return redirect()->route('admin.testimonial.index')
+        return redirect()->route('admin.Testimonials.index')
 
-            ->with('success', 'Testimonial created successfully');
+            ->with('success', 'Testimonials created successfully');
+    }
+
+
+    public function update(Request $request, $id)
+    {
+
     }
 
     public function edit($id)
@@ -94,10 +100,16 @@ class TestimonialsController extends Controller
             return redirect()->guest('login');
         }
 
-        Testimonial::find($id);
-        return view('admin.testimonials.edit',
+        $testimonial = Testimonial::find($id);
+        return view('admin.Testimonials.edit',
             ['viewTitle' => 'Testimonials',
-            'indexActiveView' => 1]);
+            'indexActiveView' => 1,
+                'testimonial' => $testimonial]);
+    }
+
+    public function destroy($id)
+    {
+
     }
 
 }

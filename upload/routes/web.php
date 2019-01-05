@@ -16,8 +16,11 @@ Route::group(
     ],
     function(){
         Route::get('/',['as' => 'dashboard','uses' => 'DashboardController@show']);
-        Route::get('/testimonials/',['as' => 'testimonials','uses' => 'TestimonialsController@index']);
-        Route::get('/testimonials/create',['as' => 'testimonials/create','uses' => 'TestimonialsController@create']);
+//        Route::get('/testimonials/',['as' => 'testimonials','uses' => 'TestimonialsController@index']);
+//        Route::get('/testimonials/index',['as' => 'testimonials','uses' => 'TestimonialsController@index']);
+//        Route::get('/testimonials/edit',['as' => 'testimonials','uses' => 'TestimonialsController@edit']);
+//        Route::get('/testimonials/destroy',['as' => 'testimonials','uses' => 'TestimonialsController@destroy']);
+//        Route::get('/testimonials/create',['as' => 'testimonials/create','uses' => 'TestimonialsController@create']);
         Route::get('/users/',['as' => 'users','uses' => 'UserController@show']);
         Route::get('/images/',['as' => 'images','uses' => 'ImageController@show']);
     });
@@ -26,4 +29,4 @@ Route::group(
 //        Route::get('/', 'DashboardController')->name('admin.dashboard');
 //    });
 
-Route::resource('testimonial','TestimonialsController');
+Route::resource('admin/testimonials','Admin\TestimonialsController');

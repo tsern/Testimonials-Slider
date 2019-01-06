@@ -49,20 +49,28 @@
                         <textarea name="description" class="form-control input-sm" placeholder="Testimonial Description"></textarea>
                     </div>
 
-                    <div class="form-group">Start Date:
-                        <div class="picker"> </div>
-                    {{--<input type="hidden" id="result" value="">--}}
-                    </div>
-
-                    <div class="form-group">End Date:
-                        <div class="picker"> </div>
-                        {{--<input type="hidden" id="result" value="">--}}
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <div class="form-group">
+                               <div class="input-group date" id="datetimepicker1">
+                                 <input type="text" name="name" id="name" class="form-control input-sm" placeholder="Start Date">
+                                    <span class="input-group-addon">
+                                         <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                               </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="form-group">
-                                <input type="date" class="form-control" id="date" placeholder="Date"required>
+                                <div class="input-group date" id="datetimepicker2">
+                                    <input type="text" name="name" id="name" class="form-control input-sm" placeholder="End Date">
+                                    <span class="input-group-addon">
+                                         <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,47 +82,16 @@
                         </div>
                     </div>
                 </table>
-
-            </div>
-    </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <div class="input-group date" id="datetimepicker1">
-                            <input type="text" class="form-control" />
-                            <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar"></span>
-            </span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <div class="input-group date" id="datetimepicker2">
-                            <input type="text" class="form-control" />
-                            <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar"></span>
-            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<script>
-    $(document).ready(function(){
-        $('#datetimepicker1').datetimepicker();
-        $('#datetimepicker2').datetimepicker();
-    });
 
-</script>
-
+        <script>
+            $(document).ready(function(){
+                $('#datetimepicker1').datetimepicker();
+                $('#datetimepicker2').datetimepicker();
+            });
+        </script>
     </div>
 @endsection
 

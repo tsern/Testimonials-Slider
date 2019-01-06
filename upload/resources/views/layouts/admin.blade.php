@@ -30,18 +30,19 @@
 
 </head>
 <body>
+    <div id="wrap">
     <nav class="navbar navbar-default">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">TechnoGeeK</a>
-            </div>
+            {{--<div class="navbar-header">--}}
+                {{--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"--}}
+                        {{--aria-expanded="false" aria-controls="navbar">--}}
+                    {{--<span class="sr-only">Toggle navigation</span>--}}
+                    {{--<span class="icon-bar"></span>--}}
+                    {{--<span class="icon-bar"></span>--}}
+                    {{--<span class="icon-bar"></span>--}}
+                {{--</button>--}}
+                {{--<a class="navbar-brand" href="#">TechnoGeeK</a>--}}
+            {{--</div>--}}
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li
@@ -67,8 +68,13 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Welcome, Madhav</a></li>
-                    <li><a href="login.html">Logout</a></li>
+                    {{--<li  @if($indexActiveView == 4)--}}
+                            {{--class="active"--}}
+                         {{--@endif>--}}
+                        {{--<a href="index.html">Welcome, </a></li>--}}
+                    <li  @if($indexActiveView == 5)
+                            class="active"
+                         @endif><a href="/login">Logout</a></li>
 
                 </ul>
             </div><!--/.nav-collapse -->
@@ -89,7 +95,7 @@
                         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Create Content</button>
                         <ul class="dropdown-menu">
                             <li><a href="/admin/testimonials/create/">Add Testimonials</a></li>
-                            <li><a href="#">Add Images</a></li>
+                            <li><a href="/admin/images/create/">Add Images</a></li>
                             <li><a href="#">Add Users</a></li>
                         </ul>
                     </div>
@@ -136,21 +142,35 @@
         </div>
     </section>
 
-
+    </div>
     <footer id="footer">
         <p>Copyright : Tania Sernivka<br>2019</p>
     </footer>
 
     <style>
+        * {
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow-x: hidden;
+        }
+
         body {
             background: #f4f4f4;
+            padding-bottom:60px;
         }
 
         .navbar {
             min-height: 33px !important;
             margin-bottom: 0;
             border-radius: 0;
+        }
 
+        ul.nav.navbar-nav{
+            display: inline-block;
         }
 
         .navbar-nav > li > a, .navbar-brand {
@@ -158,6 +178,11 @@
             padding-bottom: 0;
             height: 33px;
 
+        }
+
+        .container {
+            min-height:100%;
+            position:relative;
         }
 
         .main-color-bg {
@@ -187,8 +212,12 @@
             background: #333333;
             color: #ffffff;
             text-align: center;
-            padding: 30px;
-            margin-top: 30px;
+            /*margin-top: 200px;*/
+            /*flex: 0 0 auto;*/
+            position:absolute;
+            bottom:0;
+            width:100%;
+            height:60px;
         }
 
         .navbar-default {

@@ -22,7 +22,7 @@ Route::group(
 //        Route::get('/testimonials/destroy',['as' => 'testimonials','uses' => 'TestimonialsController@destroy']);
 //        Route::get('/testimonials/create',['as' => 'testimonials/create','uses' => 'TestimonialsController@create']);
         Route::get('/users/',['as' => 'users','uses' => 'UserController@show']);
-        Route::get('/images/',['as' => 'images','uses' => 'ImageController@show']);
+//        Route::get('/images/',['as' => 'images','uses' => 'ImageController@show']);
     });
 
 //    Route::group(['middleware' => 'admin'], function() {
@@ -30,3 +30,4 @@ Route::group(
 //    });
 
 Route::resource('admin/testimonials','Admin\TestimonialsController');
+Route::resource('admin/images','Admin\ImageController');

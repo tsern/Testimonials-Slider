@@ -24,7 +24,7 @@
                         </div>
                     @endif
                     {{--<input method="POST" action="{{ route('testimonials.store') }}"  role="form">--}}
-                        {{--<form action="{{ url('task') }}" method="POST" class="form-horizontal"></form>--}}
+                    {{--<form action="{{ url('task') }}" method="POST" class="form-horizontal"></form>--}}
                     {{ csrf_field() }}
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
@@ -53,12 +53,12 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="form-group">
-                               <div class="input-group date" id="datetimepicker1">
-                                 <input type="text" name="name" id="name" class="form-control input-sm" placeholder="Start Date">
+                                <div class="input-group date" id="datetimepicker1">
+                                    <input type="text" name="name" id="name" class="form-control input-sm" placeholder="Start Date">
                                     <span class="input-group-addon">
                                          <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
-                               </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <input type="submit"  value="Save" class="btn btn-success btn-block">
-                            <a href="{{ route('testimonials.index') }}" class="btn btn-info btn-block">Cancel</a>
+                            <a href="{{ route('images.index') }}" class="btn btn-info btn-block">Cancel</a>
                         </div>
                     </div>
                 </table>

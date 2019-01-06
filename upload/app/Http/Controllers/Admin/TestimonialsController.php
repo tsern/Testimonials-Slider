@@ -108,10 +108,10 @@ class TestimonialsController extends Controller
 
     public function edit($id)
     {
-        if (!Auth::check())
-        {
-            return redirect()->guest('login');
-        }
+//        if (!Auth::check())
+//        {
+//            return redirect()->guest('login');
+//        }
 
         $testimonial = Testimonial::find($id);
         return view('admin.Testimonials.edit',

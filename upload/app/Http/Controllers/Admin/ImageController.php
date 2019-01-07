@@ -11,12 +11,18 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 
 use App\Image;
+use Illuminate\Support\Facades\Auth;
 
 
 class ImageController extends Controller
 {
     public function index()
     {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
         $images = Image::all();
 
         return view('admin.Images.index',
@@ -27,6 +33,11 @@ class ImageController extends Controller
 
     public function show()
     {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
         $images = Image::all();
         return view('admin.Images.show',
             ['images' => $images,
@@ -36,6 +47,11 @@ class ImageController extends Controller
 
     public function create()
     {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
         return view('admin.Images.create',
             [  'viewTitle' => 'Images',
                 'indexActiveView' => 2]);

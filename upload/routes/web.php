@@ -15,7 +15,7 @@ Route::group(
         'as' => 'Admin.',
     ],
     function(){
-        Route::get('/',['as' => 'dashboard','uses' => 'DashboardController@show']);
+//        Route::get('/',['as' => 'dashboard','uses' => 'DashboardController@show']);
 //        Route::get('/testimonials/',['as' => 'testimonials','uses' => 'TestimonialsController@index']);
 //        Route::get('/testimonials/index',['as' => 'testimonials','uses' => 'TestimonialsController@index']);
 //        Route::get('/testimonials/edit',['as' => 'testimonials','uses' => 'TestimonialsController@edit']);
@@ -28,6 +28,8 @@ Route::group(
 //    Route::group(['middleware' => 'admin'], function() {
 //        Route::get('/', 'DashboardController')->name('admin.dashboard');
 //    });
+
+Route::get('/admin', 'Admin\DashboardController@show')->name('admin');
 
 Route::resource('admin/testimonials','Admin\TestimonialsController');
 Route::resource('admin/images','Admin\ImageController');

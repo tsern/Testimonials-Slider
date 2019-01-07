@@ -25,11 +25,12 @@
                     @endif
                     {{--<input method="POST" action="{{ route('testimonials.store') }}"  role="form">--}}
                         {{--<form action="{{ url('task') }}" method="POST" class="form-horizontal"></form>--}}
+                   <form method="POST" action="{{ route('testimonials.store') }}"  role="form">
                     {{ csrf_field() }}
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="form-group">
-                                <input type="text" name="name" id="name" class="form-control input-sm" placeholder="Testimonial title">
+                                <input type="text" name="title" id="name" class="form-control input-sm" placeholder="Testimonial title">
                             </div>
                         </div>
                     </div>
@@ -37,10 +38,10 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="form-group">
-                                <select>
+                                <select name="status">
                                     <option>Testimonials Status</option>
-                                    <option>Enable</option>
-                                    <option>Disable</option>
+                                    <option value="1">Enable</option>
+                                    <option value="0">Disable</option>
                                 </select>
                             </div>
                         </div>
@@ -54,7 +55,7 @@
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="form-group">
                                <div class="input-group date" id="datetimepicker1">
-                                 <input type="text" name="name" id="name" class="form-control input-sm" placeholder="Start Date">
+                                 <input type="text" name="start_date" id="name" class="form-control input-sm" placeholder="Start Date">
                                     <span class="input-group-addon">
                                          <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
@@ -67,7 +68,7 @@
                         <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="form-group">
                                 <div class="input-group date" id="datetimepicker2">
-                                    <input type="text" name="name" id="name" class="form-control input-sm" placeholder="End Date">
+                                    <input type="text" name="end_date" id="name" class="form-control input-sm" placeholder="End Date">
                                     <span class="input-group-addon">
                                          <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
@@ -82,6 +83,7 @@
                             <a href="{{ route('testimonials.index') }}" class="btn btn-info btn-block">Cancel</a>
                         </div>
                     </div>
+                   </form>
                 </table>
             </div>
         </div>

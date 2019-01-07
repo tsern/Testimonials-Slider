@@ -20,12 +20,10 @@ class TestimonialsController extends Controller
 {
     public function index()
     {
-//        if (!Auth::check())
-//        {
-//            return redirect()->guest('login');
-//        }
-
-//        $user_id = Auth::id();
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
 
         $testimonials = Testimonial::all();
 
@@ -37,23 +35,23 @@ class TestimonialsController extends Controller
 
     public function create()
     {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
         return view('admin.Testimonials.create',
             [  'viewTitle' => 'Testimonials',
                 'indexActiveView' => 1]);
     }
 
-//    public function show()
-//    {
-//////        if (!Auth::check())
-//////        {
-//////            return redirect()->guest('login');
-//////        }
-////
-////        $testimonials = Testimonials::all();
-////        return view('Testimonials.show', compact('testimonials'));
-//    }
     public function show()
     {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
         $testimonials = Testimonial::all();
         return view('admin.Testimonials.show',
         ['testimonials' => $testimonials,
@@ -63,7 +61,7 @@ class TestimonialsController extends Controller
 
     public function store(Request $request)
     {
-        if (!Auth::check())
+        if (!Auth::check() || !Auth::user()->isAdmin())
         {
             return redirect()->guest('login');
         }
@@ -71,18 +69,18 @@ class TestimonialsController extends Controller
         $id = Auth::id();
 
         $this->validate($request, [
-            'name' => 'required'
+            'title' => 'required'
         ]);
 
         $allFields = $request->all();
-        $allFields['start_date'] = date('Y-m-d G:i:s');
-        $allFields['end_date'] = date('Y-m-d G:i:s');
+        $allFields['start_date'] = date('Y-m-d G:i:s', strtotime($allFields['start_date']));
+        $allFields['end_date'] = date('Y-m-d G:i:s', strtotime($allFields['end_date']));
         $allFields['user_id'] = $id;
-        $allFields['type_id'] = 1;
+        $allFields['img_url'] = "https://www.valuecoders.com/blog/wp-content/uploads/2018/05/laravel.jpg";
 
         Testimonial::create($allFields);
 
-        return redirect()->route('admin.Testimonials.index')
+        return redirect()->route('testimonials.index')
 
             ->with('success', 'Testimonials created successfully');
     }
@@ -90,6 +88,11 @@ class TestimonialsController extends Controller
 
     public function update(Request $request, $id)
     {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
         $user_id = Auth::id();
 
         $this->validate($request, [
@@ -108,10 +111,10 @@ class TestimonialsController extends Controller
 
     public function edit($id)
     {
-//        if (!Auth::check())
-//        {
-//            return redirect()->guest('login');
-//        }
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
 
         $testimonial = Testimonial::find($id);
         return view('admin.Testimonials.edit',
@@ -122,6 +125,11 @@ class TestimonialsController extends Controller
 
     public function destroy($id)
     {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
         Testimonial::find($id)->delete();
         return redirect()->route('testimonials.index')
             ->with('success', 'Task deleted successfully');

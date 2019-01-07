@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Testimonial;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -24,7 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $isAdmin = Auth::check() && Auth::user()->isAdmin();
         $testimonials = Testimonial::all();
-        return view('home', compact('testimonials'));
+        return view('home',
+            ['testimonials'=> $testimonials,
+                'isAdmin'=> $isAdmin]
+        );
     }
 }

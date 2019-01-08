@@ -131,7 +131,7 @@
                                 active
                           @endif
                                 "><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Testimonials<span
-                                    class="badge">25</span></a>
+                                    class="badge"></span></a>
                         <a href="/admin/images" class="list-group-item
                           @if($indexActiveView == 2)
                                 active

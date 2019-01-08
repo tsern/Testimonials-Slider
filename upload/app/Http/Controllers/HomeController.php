@@ -26,7 +26,23 @@ class HomeController extends Controller
     public function index()
     {
         $isAdmin = Auth::check() && Auth::user()->isAdmin();
-        $testimonials = Testimonial::all();
+        $testimonialModels = Testimonial::all();
+
+        $testimonials = array();
+
+        foreach ($testimonialModels as $testimonialModel) {
+
+            $imageModel = $testimonialModel->image;
+            $t['img'] = $imageModel->img_url;
+
+            $userModel = $testimonialModel->user;
+            $t['name'] = $userModel->name;
+
+            $t['desc'] = $testimonialModel->description;
+
+            array_push($testimonials, $t);
+        }
+
         return view('home',
             ['testimonials'=> $testimonials,
                 'isAdmin'=> $isAdmin]

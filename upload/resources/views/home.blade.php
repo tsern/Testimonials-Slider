@@ -14,7 +14,7 @@
 
                     <!-- Carousel Slides / Quotes -->
                     <div class="carousel-inner">
-                    @if($testimonials->count())
+                    @if(count($testimonials))
                         <?php $index = 0 ?>
                         @foreach($testimonials as $testimonial)
 
@@ -28,11 +28,11 @@
                                     <div class="row">
                                         <div class="col-sm-3 text-center">
                                             <img class="img-circle"
-                                                 src={{$testimonial->img_url}} style="width:100px;height:100px;">
+                                                 src={{$testimonial['img']}} style="width:100px;height:100px;">
                                         </div>
                                         <div class="col-sm-9">
-                                            <p>{{$testimonial->text}}</p>
-                                            <small>{{$testimonial->user_id}}</small>
+                                            <p>{{$testimonial['desc']}}</p>
+                                            <small>{{$testimonial['name']}}</small>
                                         </div>
                                     </div>
                                 </blockquote>

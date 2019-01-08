@@ -25,26 +25,26 @@ class CreateTestimonialsTable extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->unsignedInteger('user_id')->nullable();
+            $table->unsignedInteger('img_id')->nullable();
             $table->string('title', 100);
-            $table->string('text')->nullable();
-            $table->string('img_url');
+            $table->string('description')->nullable();
             $table->boolean('status')->default(true);
             $table->dateTime('start_date')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->dateTime('end_date')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamps();
         });
 
-//        Schema::table($this->set_schema_table, function ($table) {
-//            $table->foreign('user_id')
-//                ->references('id')->on('users')
-//                ->onDelete('cascade')
-//                ->onUpdate('cascade');
+        Schema::table($this->set_schema_table, function ($table) {
+            $table->foreign('user_id')
+                ->references('id')->on('users')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
 
-//            $table->foreign('period_id')
-//                ->references('id')->on('period')
-//                ->onDelete('cascade')
-//                ->onUpdate('cascade');
-//        });
+            $table->foreign('img_id')
+                ->references('id')->on('images')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
+        });
 
 
         // Insert some stuff
@@ -52,8 +52,8 @@ class CreateTestimonialsTable extends Migration
             array(
                 'user_id' => 1,
                 'title' => 'Some text',
-                'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                'img_url' => 'http://www.reactiongifs.com/r/overbite.gif',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                'img_id' => 1,
                 'status' => '1',
                 'start_date' => '01.01.2019',
                 'end_date' => '12.01.2019',
@@ -62,11 +62,13 @@ class CreateTestimonialsTable extends Migration
 
         DB::table($this->set_schema_table)->insert(
             array(
-                'user_id' => 2,
-                'title' => 'Some text',
-                'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.',
-                'img_url' => 'https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg',
-
+                'user_id' => 1,
+                'title' => 'Some text 222222222222',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                'img_id' => 2,
+                'status' => '1',
+                'start_date' => '01.01.2019',
+                'end_date' => '12.01.2019',
             )
         );
     }

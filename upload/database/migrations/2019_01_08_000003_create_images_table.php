@@ -17,10 +17,10 @@ class CreateImagesTable extends Migration
     {
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->string('img_url');
             $table->string('title', 100 );
-            $table->string('desc');
+            $table->string('description');
+            $table->timestamps();
         });
 
         // Insert some stuff
@@ -28,7 +28,7 @@ class CreateImagesTable extends Migration
             array(
                 'id' => 1,
                 'title' => 'Some text',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
                 'img_url' => 'https://abc-import.ru/wp-content/uploads/2018/10/fb939f6b6d6a203689ffbac968b9e320-300x200.jpg',
             )
         );
@@ -38,7 +38,7 @@ class CreateImagesTable extends Migration
             array(
                 'id' => 2,
                 'title' => 'Some text',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
                 'img_url' => 'https://abc-import.ru/wp-content/uploads/2018/10/a57ee2c62ca44076955e2afa74223d07-300x200.jpg',
             )
         );

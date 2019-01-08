@@ -13,7 +13,14 @@ use Illuminate\Database\Eloquent\Model;
 class Testimonial extends Model
 {
     protected $fillable = [
-        'id', 'user_id', 'title', 'text', 'img_url', 'status', 'start_date', 'end_date', 'created_at', 'updated_at',
+        'id', 'user_id', 'title', 'description', 'img_id', 'status', 'start_date', 'end_date', 'created_at', 'updated_at',
     ];
 
+    public function image() {
+        return $this->belongsTo('App\Image','img_id');
+    }
+
+    public function user() {
+        return $this->belongsTo('App\User','user_id');
+    }
 }

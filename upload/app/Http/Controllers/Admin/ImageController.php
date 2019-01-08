@@ -12,6 +12,7 @@ use App\Http\Controllers\Controller;
 
 use App\Image;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 
 class ImageController extends Controller
@@ -43,6 +44,29 @@ class ImageController extends Controller
             ['images' => $images,
                 'viewTitle' => 'Images',
                 'indexActiveView' => 2]);
+    }
+
+    public function store(Request $request)
+    {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
+//        $id = Auth::id();
+
+        $this->validate($request, [
+            'title' => 'required'
+        ]);
+
+        $allFields = $request->all();
+        $allFields['img_url'] = "https://www.valuecoders.com/blog/wp-content/uploads/2018/05/laravel.jpg";
+
+        Image::create($allFields);
+
+        return redirect()->route('images.index')
+
+            ->with('success', 'Image created successfully');
     }
 
     public function create()

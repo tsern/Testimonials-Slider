@@ -13,6 +13,6 @@ use Illuminate\Database\Eloquent\Model;
 class Image extends Model
 {
     protected $fillable = [
-        'id', 'img_url', 'title', 'desc'
+        'id', 'img_url', 'title', 'description'
     ];
 }

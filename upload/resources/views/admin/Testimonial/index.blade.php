@@ -6,6 +6,11 @@
             <div class="panel-heading" style="background-color:  #095f59">
                 <h3 class="panel-title">All Testimonials</h3>
             </div>
+            @if(Session::has('success'))
+                <div class="alert alert-info">
+                    {{Session::get('success')}}
+                </div>
+            @endif
             <div class="panel-body">
                 <table class="table table-striped table-hover">
                     <thead>

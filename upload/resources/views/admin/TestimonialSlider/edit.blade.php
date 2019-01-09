@@ -14,13 +14,13 @@
                             <div class="row">
                                 <div class="col-xs-6 col-sm-6 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="title" value="{{$testimonial->title}}" id="name" class="form-control input-sm" placeholder="Testimonial Title">
+                                        <input type="text" name="title" value="{{$testimonial->title}}" id="name" class="form-control input-sm" placeholder="Testimonial Slider Title">
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <textarea name="text" class="form-control input-sm" placeholder="Description">{{$testimonial->text}}</textarea>
+                                <textarea name="text" class="form-control input-sm" placeholder="Description">{{$testimonial->description}}</textarea>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12">

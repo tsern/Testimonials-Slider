@@ -84,6 +84,56 @@ class TestimonialController extends Controller
             [  'viewTitle' => 'Testimonial',
                 'indexActiveView' => 2]);
     }
+
+    public function edit($id)
+    {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
+        $testimonial = Testimonial::find($id);
+        return view('admin.Testimonial.edit',
+            ['viewTitle' => 'Testimonial',
+                'indexActiveView' => 1,
+                'testimonial' => $testimonial]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
+        $user_id = Auth::id();
+
+        $this->validate($request, [
+            'title' => 'required'
+        ]);
+
+        $allFields = $request->all();
+        $allFields['user_id'] = $user_id;
+        $allFields['start_date'] = date('Y-m-d G:i:s');
+        $allFields['end_date'] = date('Y-m-d G:i:s');
+
+        $result = Testimonial::find($id)->update($allFields);
+        return redirect()->route('testimonial.index')
+            ->with('success','Testimonial updated successfully');
+
+    }
+
+    public function destroy($id)
+    {
+        if (!Auth::check() || !Auth::user()->isAdmin())
+        {
+            return redirect()->guest('login');
+        }
+
+        Testimonial::find($id)->delete();
+        return redirect()->route('testimonial.index')
+            ->with('success', 'Task deleted successfully');
+    }
 }
 
 

@@ -38,7 +38,7 @@
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <select name="status">
+                                    <select required name="status" >
                                         <option value="" hidden>Testimonials Slider Status</option>
                                         <option value="1">Enable</option>
                                         <option value="0">Disable</option>

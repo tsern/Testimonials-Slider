@@ -107,7 +107,7 @@ class TestimonialSliderController extends Controller
 
         $result = TestimonialSlider::find($id)->update($allFields);
         return redirect()->route('testimonialslider.index')
-            ->with('success','TestimonialSlider updated successfully');
+            ->with('success','Testimonial Slider updated successfully');
     }
 
     public function edit($id)

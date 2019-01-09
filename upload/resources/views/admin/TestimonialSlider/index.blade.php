@@ -4,7 +4,7 @@
     <div class="col-md-9">
         <div class="panel panel-default">
             <div class="panel-heading" style="background-color:  #095f59">
-                <h3 class="panel-title">All Testimonials</h3>
+                <h3 class="panel-title">All Testimonial Sliders</h3>
             </div>
             @if(Session::has('success'))
                 <div class="alert alert-info">

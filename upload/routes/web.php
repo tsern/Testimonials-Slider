@@ -16,13 +16,13 @@ Route::group(
     ],
     function(){
 //        Route::get('/',['as' => 'dashboard','uses' => 'DashboardController@show']);
-//        Route::get('/testimonials/',['as' => 'testimonials','uses' => 'TestimonialsController@index']);
-//        Route::get('/testimonials/index',['as' => 'testimonials','uses' => 'TestimonialsController@index']);
-//        Route::get('/testimonials/edit',['as' => 'testimonials','uses' => 'TestimonialsController@edit']);
-//        Route::get('/testimonials/destroy',['as' => 'testimonials','uses' => 'TestimonialsController@destroy']);
-//        Route::get('/testimonials/create',['as' => 'testimonials/create','uses' => 'TestimonialsController@create']);
+//        Route::get('/testimonials/',['as' => 'testimonials','uses' => 'TestimonialSliderController@index']);
+//        Route::get('/testimonials/index',['as' => 'testimonials','uses' => 'TestimonialSliderController@index']);
+//        Route::get('/testimonials/edit',['as' => 'testimonials','uses' => 'TestimonialSliderController@edit']);
+//        Route::get('/testimonials/destroy',['as' => 'testimonials','uses' => 'TestimonialSliderController@destroy']);
+//        Route::get('/testimonials/create',['as' => 'testimonials/create','uses' => 'TestimonialSliderController@create']);
         Route::get('/users/',['as' => 'users','uses' => 'UserController@show']);
-//        Route::get('/images/',['as' => 'images','uses' => 'ImageController@show']);
+//        Route::get('/images/',['as' => 'images','uses' => 'TestimonialController@show']);
     });
 
 //    Route::group(['middleware' => 'admin'], function() {
@@ -31,5 +31,5 @@ Route::group(
 
 Route::get('/admin', 'Admin\DashboardController@show')->name('admin');
 
-Route::resource('admin/testimonials','Admin\TestimonialsController');
-Route::resource('admin/images','Admin\ImageController');
+Route::resource('admin/testimonialslider','Admin\TestimonialSliderController');
+Route::resource('admin/testimonial','Admin\TestimonialController');

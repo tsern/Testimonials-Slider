@@ -7,12 +7,12 @@
                 <h3 class="panel-title">All Images</h3>
             </div>
             <div class="panel-body">
-                @if($images->count())
-                    @foreach($images as $image)
+                @if($testimonials->count())
+                    @foreach($testimonials as $testimonial)
                         <div class="responsive">
                             <div class="gallery">
-                                <img src={{$image->img_url}} alt={{$image->title}} width="300" height="200">
-                                <div class="desc">{{$image->desc}}></div>
+                                <img src={{$testimonial->img_url}} alt={{$testimonial->title}} width="300" height="200">
+                                <div class="desc">{{$testimonial->desc}}></div>
                             </div>
                         </div>
                     @endforeach

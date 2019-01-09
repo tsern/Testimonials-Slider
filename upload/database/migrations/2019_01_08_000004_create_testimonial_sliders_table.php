@@ -4,13 +4,13 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTestimonialsTable extends Migration
+class CreateTestimonialSlidersTable extends Migration
 {
     /**
      * Schema table name to migrate
      * @var string
      */
-    public $set_schema_table = 'testimonials';
+    public $set_schema_table = 'testimonial_sliders';
 
     /**
      * Run the migrations.
@@ -34,26 +34,25 @@ class CreateTestimonialsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::table($this->set_schema_table, function ($table) {
-            $table->foreign('user_id')
-                ->references('id')->on('users')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
-
-            $table->foreign('img_id')
-                ->references('id')->on('images')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
-        });
+////        Schema::table($this->set_schema_table, function ($table) {
+////            $table->foreign('user_id')
+////                ->references('id')->on('users')
+////                ->onDelete('cascade')
+////                ->onUpdate('cascade');
+////
+////            $table->foreign('img_id')
+////                ->references('id')->on('images')
+////                ->onDelete('cascade')
+////                ->onUpdate('cascade');
+//        });
 
 
         // Insert some stuff
         DB::table($this->set_schema_table)->insert(
             array(
-                'user_id' => 1,
+
                 'title' => 'Some text',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                'img_id' => 1,
                 'status' => '1',
                 'start_date' => '01.01.2019',
                 'end_date' => '12.01.2019',
@@ -62,10 +61,8 @@ class CreateTestimonialsTable extends Migration
 
         DB::table($this->set_schema_table)->insert(
             array(
-                'user_id' => 1,
                 'title' => 'Some text 222222222222',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                'img_id' => 2,
                 'status' => '1',
                 'start_date' => '01.01.2019',
                 'end_date' => '12.01.2019',

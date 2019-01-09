@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Testimonial;
+use App\TestimonialSlider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         $isAdmin = Auth::check() && Auth::user()->isAdmin();
-        $testimonialModels = Testimonial::all();
+        $testimonialModels = TestimonialSlider::all();
 
         $testimonials = array();
 

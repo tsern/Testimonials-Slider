@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use App\Testimonial;
+use App\TestimonialSlider;
 
 
-class TestimonialsController extends Controller
+class TestimonialSliderController extends Controller
 {
     public function index()
     {
@@ -25,11 +25,11 @@ class TestimonialsController extends Controller
             return redirect()->guest('login');
         }
 
-        $testimonials = Testimonial::all();
+        $testimonials = TestimonialSlider::all();
 
-        return view('admin.Testimonials.index',
+        return view('admin.TestimonialSlider.index',
             ['testimonials' => $testimonials,
-                'viewTitle' => 'Testimonials',
+                'viewTitle' => 'Testimonial Slider',
                 'indexActiveView' => 1]);
     }
 
@@ -40,8 +40,8 @@ class TestimonialsController extends Controller
             return redirect()->guest('login');
         }
 
-        return view('admin.Testimonials.create',
-            [  'viewTitle' => 'Testimonials',
+        return view('admin.TestimonialSlider.create',
+            [  'viewTitle' => 'Testimonial Slider',
                 'indexActiveView' => 1]);
     }
 
@@ -52,10 +52,10 @@ class TestimonialsController extends Controller
             return redirect()->guest('login');
         }
 
-        $testimonials = Testimonial::all();
-        return view('admin.Testimonials.show',
+        $testimonials = TestimonialSlider::all();
+        return view('admin.TestimonialSlider.show',
         ['testimonials' => $testimonials,
-         'viewTitle' => 'Testimonials',
+         'viewTitle' => 'Testimonial Slider',
          'indexActiveView' => 1]);
     }
 
@@ -69,7 +69,8 @@ class TestimonialsController extends Controller
         $id = Auth::id();
 
         $this->validate($request, [
-            'title' => 'required'
+            'title' => 'required|max:100',
+            'description' => 'max:500'
         ]);
 
         $allFields = $request->all();
@@ -78,11 +79,11 @@ class TestimonialsController extends Controller
         $allFields['user_id'] = $id;
         $allFields['img_url'] = "https://www.valuecoders.com/blog/wp-content/uploads/2018/05/laravel.jpg";
 
-        Testimonial::create($allFields);
+        TestimonialSlider::create($allFields);
 
-        return redirect()->route('testimonials.index')
+        return redirect()->route('testimonialslider.index')
 
-            ->with('success', 'Testimonials created successfully');
+            ->with('success', 'Testimonial Slider created successfully');
     }
 
 
@@ -104,9 +105,9 @@ class TestimonialsController extends Controller
         $allFields['start_date'] = date('Y-m-d G:i:s');
         $allFields['end_date'] = date('Y-m-d G:i:s');
 
-        $result = Testimonial::find($id)->update($allFields);
-        return redirect()->route('testimonials.index')
-            ->with('success','Testimonial updated successfully');
+        $result = TestimonialSlider::find($id)->update($allFields);
+        return redirect()->route('testimonialslider.index')
+            ->with('success','TestimonialSlider updated successfully');
     }
 
     public function edit($id)
@@ -116,9 +117,9 @@ class TestimonialsController extends Controller
             return redirect()->guest('login');
         }
 
-        $testimonial = Testimonial::find($id);
-        return view('admin.Testimonials.edit',
-            ['viewTitle' => 'Testimonials',
+        $testimonial = TestimonialSlider::find($id);
+        return view('admin.TestimonialSlider.edit',
+            ['viewTitle' => 'TestimonialSlider',
             'indexActiveView' => 1,
                 'testimonial' => $testimonial]);
     }
@@ -130,8 +131,8 @@ class TestimonialsController extends Controller
             return redirect()->guest('login');
         }
 
-        Testimonial::find($id)->delete();
-        return redirect()->route('testimonials.index')
+        TestimonialSlider::find($id)->delete();
+        return redirect()->route('testimonialslider.index')
             ->with('success', 'Task deleted successfully');
     }
 

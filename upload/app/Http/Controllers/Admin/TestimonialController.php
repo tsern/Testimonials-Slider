@@ -10,12 +10,12 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 
-use App\Image;
+use App\Testimonial;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 
-class ImageController extends Controller
+class TestimonialController extends Controller
 {
     public function index()
     {
@@ -24,11 +24,11 @@ class ImageController extends Controller
             return redirect()->guest('login');
         }
 
-        $images = Image::all();
+        $testimonials = Testimonial::all();
 
-        return view('admin.Images.index',
-            ['images' => $images,
-                'viewTitle' => 'Images',
+        return view('admin.Testimonial.index',
+            ['testimonials' => $testimonials,
+                'viewTitle' => 'Testimonial',
                 'indexActiveView' => 2]);
     }
 
@@ -39,10 +39,10 @@ class ImageController extends Controller
             return redirect()->guest('login');
         }
 
-        $images = Image::all();
-        return view('admin.Images.show',
-            ['images' => $images,
-                'viewTitle' => 'Images',
+        $testimonials = Testimonial::all();
+        return view('admin.Testimonial.show',
+            ['testimonials' => $testimonials,
+                'viewTitle' => 'Testimonial',
                 'indexActiveView' => 2]);
     }
 
@@ -53,20 +53,24 @@ class ImageController extends Controller
             return redirect()->guest('login');
         }
 
-//        $id = Auth::id();
+        $name = Auth::id();
 
         $this->validate($request, [
-            'title' => 'required'
+            'title' => 'required|max:100',
         ]);
 
         $allFields = $request->all();
-        $allFields['img_url'] = "https://www.valuecoders.com/blog/wp-content/uploads/2018/05/laravel.jpg";
+        $allFields['name'] = $name;
+        if ($request->hasFile('file')) {
+            $allFields['file'] = $request->file('file')
+                ->store('uploads', 'public');
+//        $allFields['img_url'] = "https://www.valuecoders.com/blog/wp-content/uploads/2018/05/laravel.jpg";
 
-        Image::create($allFields);
+            Testimonial::create($allFields);
 
-        return redirect()->route('images.index')
-
-            ->with('success', 'Image created successfully');
+            return redirect()->route('testimonial.index')
+                ->with('success', 'Testimonial created successfully');
+        }
     }
 
     public function create()
@@ -76,8 +80,8 @@ class ImageController extends Controller
             return redirect()->guest('login');
         }
 
-        return view('admin.Images.create',
-            [  'viewTitle' => 'Images',
+        return view('admin.Testimonial.create',
+            [  'viewTitle' => 'Testimonial',
                 'indexActiveView' => 2]);
     }
 }

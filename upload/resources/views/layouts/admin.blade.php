@@ -53,12 +53,12 @@
                             @if($indexActiveView == 1)
                             class="active"
                             @endif
-                    ><a href="/admin/testimonials">Testimonials</a></li>
+                    ><a href="/admin/testimonialslider">Testimonial Slider</a></li>
                     <li
                             @if($indexActiveView == 2)
                             class="active"
                             @endif
-                    ><a href="/admin/images">Images</a></li>
+                    ><a href="/admin/testimonial">Testimonial</a></li>
                     <li
                             @if($indexActiveView == 3)
                             class="active"
@@ -104,8 +104,8 @@
                     <div class="dropdown">
                         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Create Content</button>
                         <ul class="dropdown-menu">
-                            <li><a href="/admin/testimonials/create/">Add Testimonials</a></li>
-                            <li><a href="/admin/images/create/">Add Images</a></li>
+                            <li><a href="/admin/testimonialslider/create/">Add Testimonial Slider</a></li>
+                            <li><a href="/admin/testimonial/create/">Add Testimonial</a></li>
                             <li><a href="#">Add Users</a></li>
                         </ul>
                     </div>
@@ -126,17 +126,17 @@
                          @endif
                                 "><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                             Dashboard</a>
-                        <a href="/admin/testimonials" class="list-group-item
+                        <a href="/admin/testimonialslider" class="list-group-item
                           @if($indexActiveView == 1)
                                 active
                           @endif
-                                "><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Testimonials<span
+                                "><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Testimonial Slider<span
                                     class="badge"></span></a>
-                        <a href="/admin/images" class="list-group-item
+                        <a href="/admin/testimonial" class="list-group-item
                           @if($indexActiveView == 2)
                                 active
                           @endif
-                                "><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Images<span
+                                "><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Testimonial<span
                                     class="badge">126</span></a>
                         <a href="/admin/users" class="list-group-item
                           @if($indexActiveView == 3)
@@ -313,6 +313,18 @@
                 color: #010800;
                 background-color: #689a9b;
             }
+
+        }
+
+        select {
+            padding: 5px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: inherit;
+            width: 100%;
+            border: 1px solid #ccc;
         }
     </style>
 </body>

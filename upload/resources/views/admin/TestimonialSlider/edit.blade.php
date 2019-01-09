@@ -8,7 +8,7 @@
             </div>
                 <div class="panel-body">
                     <div class="table-container">
-                        <form method="POST" action="{{ route('testimonials.update', $testimonial->id) }}"  role="form">
+                        <form method="POST" action="{{ route('testimonialslider.update', $testimonial->id) }}"  role="form">
                             {{ csrf_field() }}
                             <input name="_method" type="hidden" value="PATCH">
                             <div class="row">
@@ -25,7 +25,7 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                     <input type="submit"  value="Update" class="btn btn-success btn-block">
-                                    <a href="{{ route('testimonials.index') }}" class="btn btn-info btn-block" >Back</a>
+                                    <a href="{{ route('testimonialslider.index') }}" class="btn btn-info btn-block" >Back</a>
                                 </div>
                             </div>
                         </form>

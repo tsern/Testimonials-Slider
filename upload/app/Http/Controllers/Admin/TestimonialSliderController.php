@@ -45,19 +45,19 @@ class TestimonialSliderController extends Controller
                 'indexActiveView' => 1]);
     }
 
-    public function show()
-    {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
-        $testimonials = TestimonialSlider::all();
-        return view('admin.TestimonialSlider.show',
-        ['testimonials' => $testimonials,
-         'viewTitle' => 'Testimonial Slider',
-         'indexActiveView' => 1]);
-    }
+//    public function show()
+//    {
+//        if (!Auth::check() || !Auth::user()->isAdmin())
+//        {
+//            return redirect()->guest('login');
+//        }
+//
+//        $testimonials = TestimonialSlider::all();
+//        return view('admin.TestimonialSlider.show',
+//        ['testimonials' => $testimonials,
+//         'viewTitle' => 'Testimonial Slider',
+//         'indexActiveView' => 1]);
+//    }
 
     public function store(Request $request)
     {
@@ -76,8 +76,6 @@ class TestimonialSliderController extends Controller
         $allFields = $request->all();
         $allFields['start_date'] = date('Y-m-d G:i:s', strtotime($allFields['start_date']));
         $allFields['end_date'] = date('Y-m-d G:i:s', strtotime($allFields['end_date']));
-        $allFields['user_id'] = $id;
-        $allFields['img_url'] = "https://www.valuecoders.com/blog/wp-content/uploads/2018/05/laravel.jpg";
 
         TestimonialSlider::create($allFields);
 
@@ -101,9 +99,8 @@ class TestimonialSliderController extends Controller
         ]);
 
         $allFields = $request->all();
-        $allFields['user_id'] = $user_id;
-        $allFields['start_date'] = date('Y-m-d G:i:s');
-        $allFields['end_date'] = date('Y-m-d G:i:s');
+//        $allFields['start_date'] = date('Y-m-d G:i:s', strtotime($allFields['start_date']));
+//        $allFields['end_date'] = date('Y-m-d G:i:s', strtotime($allFields['end_date']));
 
         $result = TestimonialSlider::find($id)->update($allFields);
         return redirect()->route('testimonialslider.index')

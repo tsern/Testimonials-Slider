@@ -21,7 +21,7 @@ Route::group(
 //        Route::get('/testimonials/edit',['as' => 'testimonials','uses' => 'TestimonialSliderController@edit']);
 //        Route::get('/testimonials/destroy',['as' => 'testimonials','uses' => 'TestimonialSliderController@destroy']);
 //        Route::get('/testimonials/create',['as' => 'testimonials/create','uses' => 'TestimonialSliderController@create']);
-        Route::get('/users/',['as' => 'users','uses' => 'UserController@show']);
+//        Route::get('/users/',['as' => 'users','uses' => 'UserController@show']);
 //        Route::get('/images/',['as' => 'images','uses' => 'TestimonialController@show']);
     });
 
@@ -33,3 +33,4 @@ Route::get('/admin', 'Admin\DashboardController@show')->name('admin');
 
 Route::resource('admin/testimonialslider','Admin\TestimonialSliderController');
 Route::resource('admin/testimonial','Admin\TestimonialController');
+Route::resource('admin/image','Admin\ImageController');

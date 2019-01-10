@@ -30,9 +30,13 @@
                                 <td><input type="checkbox" class="checkthis" /></td>
                                 <td>{{$testimonial->id}}</td>
                                 <td>{{$testimonial->title}}</td>
-                                <td>{{$testimonial->status}}</td>
-                                <td>{{$testimonial->start_date}}</td>
-                                <td>{{$testimonial->end_date}}</td>
+                                @if ($testimonial->status==1)
+                                <td>Enabled</td>
+                                @else
+                                <td>Disabled</td>
+                                @endif
+                                <td><img src={{$testimonial->image}} height="120px" width="150px"></td>
+                                <td>{{$testimonial->slider_id}}</td>
                                 <td><a class="btn btn-primary btn-xs" href="{{action('Admin\TestimonialController@edit', $testimonial->id)}}" ><span class="glyphicon glyphicon-pencil"></span></a></td>
                                 <td>
                                     <form action="{{action('Admin\TestimonialController@destroy', $testimonial->id)}}" method="post">

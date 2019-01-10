@@ -62,7 +62,7 @@
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="lastname" id="name" class="form-control input-sm" placeholder="Last name">
+                                    <input type="text" name="lastname" class="form-control input-sm" placeholder="Last name">
                                 </div>
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="company" id="name" class="form-control input-sm" placeholder="Company name">
+                                    <input type="text" name="company"  class="form-control input-sm" placeholder="Company name">
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="url" name="website" id="name" class="form-control input-sm" placeholder="Website link">
+                                    <input type="url" name="website" class="form-control input-sm" placeholder="Website link">
                                 </div>
                             </div>
                         </div>
@@ -86,17 +86,33 @@
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="url" name="linkedin" id="name" class="form-control input-sm" placeholder="Linkedin link" pattern="https://.*" size="30" required>
+                                    <input type="url" name="linkedin" class="form-control input-sm" placeholder="Linkedin link" pattern="https://.*" size="30" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{--<div class="row">--}}
+                            {{--<div class="col-xs-6 col-sm-6 col-md-6">--}}
+                                {{--<div class="form-group {{ $errors->has('file') ? 'has-error' : ''}}">--}}
+                                    {{--<label for="file" class="control-label">{{ 'Upload image' }}</label>--}}
+                                    {{--<input class="form-control" name="file" type="file" id="file" value="{{ isset($testimonial->file) ? $testimonial->file : ''}}" >--}}
+                                    {{--{!! $errors->first('file', '<p class="help-block">:message</p>') !!}--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="image" class="form-control input-sm" placeholder="image url">
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
-                                <div class="form-group {{ $errors->has('file') ? 'has-error' : ''}}">
-                                    <label for="file" class="control-label">{{ 'Upload image' }}</label>
-                                    <input class="form-control" name="img_id" type="file" id="file" value="{{ isset($testimonial->file) ? $testimonial->file : ''}}" >
-                                    {!! $errors->first('file', '<p class="help-block">:message</p>') !!}
+                                <div class="form-group">
+                                    <input type="text" name="slider_id" class="form-control input-sm" placeholder="Testimonial slider">
                                 </div>
                             </div>
                         </div>

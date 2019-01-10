@@ -7,9 +7,17 @@
                 <div class="carousel slide" data-ride="carousel" id="quote-carousel">
                     <!-- Bottom Carousel Indicators -->
                     <ol class="carousel-indicators">
-                        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#quote-carousel" data-slide-to="1"></li>
-                        <li data-target="#quote-carousel" data-slide-to="2"></li>
+                        @if(count($testimonials))
+                            <?php $index = 0 ?>
+                            @foreach($testimonials as $testimonial)
+                                    @if($index==0)
+                                        <li data-target="#quote-carousel" data-slide-to="{{$index}}" class="active"></li>
+                                    @else
+                                        <li data-target="#quote-carousel" data-slide-to="{{$index}}"></li>
+                                    @endif
+                                <?php $index++ ?>
+                            @endforeach
+                        @endif
                     </ol>
 
                     <!-- Carousel Slides / Quotes -->
@@ -27,12 +35,17 @@
                                 <blockquote>
                                     <div class="row">
                                         <div class="col-sm-3 text-center">
+                                            @if($testimonial['show_image']==1)
                                             <img class="img-circle"
                                                  src={{$testimonial['img']}} style="width:100px;height:100px;">
+                                            @endif
                                         </div>
                                         <div class="col-sm-9">
                                             <p>{{$testimonial['desc']}}</p>
                                             <small>{{$testimonial['name']}}</small>
+                                            @if($testimonial['show_company']==1)
+                                                 <span>{{$testimonial['company']}}</span>
+                                            @endif
                                         </div>
                                     </div>
                                 </blockquote>

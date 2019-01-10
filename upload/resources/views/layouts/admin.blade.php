@@ -63,7 +63,7 @@
                             @if($indexActiveView == 3)
                             class="active"
                             @endif
-                    ><a href="/admin/users">Users</a></li>
+                    ><a href="/admin/image">Image</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -106,7 +106,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="/admin/testimonialslider/create/">Add Testimonial Slider</a></li>
                             <li><a href="/admin/testimonial/create/">Add Testimonial</a></li>
-                            <li><a href="#">Add Users</a></li>
+                            <li><a href="/admin/image/create">Add Image</a></li>
                         </ul>
                     </div>
                 </div>
@@ -138,11 +138,11 @@
                           @endif
                                 "><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Testimonial<span
                                     class="badge">126</span></a>
-                        <a href="/admin/users" class="list-group-item
+                        <a href="/admin/image" class="list-group-item
                           @if($indexActiveView == 3)
                                 active
                           @endif
-                                "><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Users <span
+                                "><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Image<span
                                     class="badge">12</span></a>
                     </div>
                 </div>

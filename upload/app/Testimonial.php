@@ -13,6 +13,10 @@ use Illuminate\Database\Eloquent\Model;
 class Testimonial extends Model
 {
     protected $fillable = [
-        'id', 'title', 'status', 'description', 'name', 'lastname', 'company', 'website', 'linkedin', 'foto', 'testimonialslider'
+        'id', 'title', 'status', 'description', 'name', 'lastname', 'company', 'website', 'linkedin', 'image', 'slider_id',
     ];
+
+    public function slider() {
+        return $this->belongsTo('App\TestimonialSlider','slider_id');
+    }
 }

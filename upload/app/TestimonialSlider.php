@@ -13,14 +13,6 @@ use Illuminate\Database\Eloquent\Model;
 class TestimonialSlider extends Model
 {
     protected $fillable = [
-        'id', 'user_id', 'title', 'description', 'img_id', 'status', 'start_date', 'end_date', 'created_at', 'updated_at',
+        'id', 'title', 'description', 'status', 'show_image', 'show_company', 'start_date', 'end_date', 'created_at', 'updated_at',
     ];
-
-    public function image() {
-        return $this->belongsTo('App\Testimonial','img_id');
-    }
-
-    public function user() {
-        return $this->belongsTo('App\User','user_id');
-    }
 }

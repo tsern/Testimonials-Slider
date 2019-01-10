@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Testimonial;
 use App\TestimonialSlider;
+use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -26,25 +28,42 @@ class HomeController extends Controller
     public function index()
     {
         $isAdmin = Auth::check() && Auth::user()->isAdmin();
-        $testimonialModels = TestimonialSlider::all();
+        $testimonials = Testimonial::all();
 
-        $testimonials = array();
+        $testimonialsData = array();
+        $curDate = new DateTime();
 
-        foreach ($testimonialModels as $testimonialModel) {
+        foreach ($testimonials as $testimonial) {
+            $startDateStr = $testimonial->slider->start_date;
+            $startDate = DateTime::createFromFormat('Y-m-d G:i:s', $startDateStr);
+            $endDateStr = $testimonial->slider->end_date;
+            $endDate = DateTime::createFromFormat('Y-m-d G:i:s', $endDateStr);
 
-            $imageModel = $testimonialModel->image;
-            $t['img'] = $imageModel->img_url;
+            if ($curDate < $startDate || $curDate > $endDate) {
+                continue;
+            }
 
-            $userModel = $testimonialModel->user;
-            $t['name'] = $userModel->name;
+            if ($testimonial->status !=1) {
+                continue;
+            }
 
-            $t['desc'] = $testimonialModel->description;
+            if ($testimonial->slider->status !=1) {
+                continue;
+            }
 
-            array_push($testimonials, $t);
+
+            $t['img'] = $testimonial->image;
+            $t['name'] = $testimonial->name.' '.$testimonial->lastname;
+            $t['desc'] = $testimonial->description;
+            $t['company'] = $testimonial->company;
+            $t['show_image'] = $testimonial->slider->show_image;
+            $t['show_company'] = $testimonial->slider->show_company;
+
+            array_push($testimonialsData, $t);
         }
 
         return view('home',
-            ['testimonials'=> $testimonials,
+            ['testimonials'=> $testimonialsData,
                 'isAdmin'=> $isAdmin]
         );
     }

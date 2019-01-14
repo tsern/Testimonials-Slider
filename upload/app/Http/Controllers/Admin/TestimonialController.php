@@ -32,20 +32,6 @@ class TestimonialController extends Controller
                 'indexActiveView' => 2]);
     }
 
-//    public function show()
-//    {
-//        if (!Auth::check() || !Auth::user()->isAdmin())
-//        {
-//            return redirect()->guest('login');
-//        }
-//
-//        $testimonials = Testimonial::all();
-//        return view('admin.Testimonial.show',
-//            ['testimonials' => $testimonials,
-//                'viewTitle' => 'Testimonial',
-//                'indexActiveView' => 2]);
-//    }
-
     public function store(Request $request)
     {
         if (!Auth::check() || !Auth::user()->isAdmin())
@@ -58,12 +44,10 @@ class TestimonialController extends Controller
         ]);
 
         $allFields = $request->all();
-//        $allFields['name'] = $name;
-//        if ($request->hasFile('file')) {
-//            $allFields['file'] = $request->file('file')
-//                ->store('uploads', 'public');
-//        $allFields['img_url'] = "https://www.valuecoders.com/blog/wp-content/uploads/2018/05/laravel.jpg";
-//        }
+
+        $image = $request->file('image');
+        $path = $image->store('uploads', 'public');
+        $allFields['image']= $path;
 
         Testimonial::create($allFields);
 

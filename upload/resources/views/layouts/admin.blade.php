@@ -31,128 +31,111 @@
 </head>
 <body>
     <div id="wrap">
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li
-                            @if($indexActiveView == 0)
-                            class="active"
-                            @endif
-                    ><a href="/admin">Dashboard</a></li>
-                    <li
-                            @if($indexActiveView == 1)
-                            class="active"
-                            @endif
-                    ><a href="/admin/testimonialslider">Testimonial Slider</a></li>
-                    <li
-                            @if($indexActiveView == 2)
-                            class="active"
-                            @endif
-                    ><a href="/admin/testimonial">Testimonial</a></li>
-                    <li
-                            @if($indexActiveView == 3)
-                            class="active"
-                            @endif
-                    ><a href="/admin/image">Image</a></li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    {{--<li  @if($indexActiveView == 4)--}}
-                            {{--class="active"--}}
-                         {{--@endif>--}}
-                        {{--<a href="index.html">Welcome, </a></li>--}}
-                    <li  @if($indexActiveView == 5)
-                            class="active"
-                         @endif>
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-
-                    </li>
-
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </nav>
-
-
-    <header id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> {{$viewTitle}}
-                        <small>Manage Your Site</small>
-                    </h1>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-                <div class="col-md-2">
-                    <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Create Content</button>
-                        <ul class="dropdown-menu">
-                            <li><a href="/admin/testimonialslider/create/">Add Testimonial Slider</a></li>
-                            <li><a href="/admin/testimonial/create/">Add Testimonial</a></li>
-                            <li><a href="/admin/image/create">Add Image</a></li>
-                        </ul>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li
+                                @if($indexActiveView == 0)
+                                class="active"
+                                @endif
+                        ><a href="/admin">Dashboard</a></li>
+                        <li
+                                @if($indexActiveView == 1)
+                                class="active"
+                                @endif
+                        ><a href="/admin/testimonialslider">Testimonial Slider</a></li>
+                        <li
+                                @if($indexActiveView == 2)
+                                class="active"
+                                @endif
+                        ><a href="/admin/testimonial">Testimonial</a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li  @if($indexActiveView == 5)
+                                class="active"
+                             @endif>
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> {{$viewTitle}}
+                            <small>Manage Your Site</small>
+                        </h1>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Create Content</button>
+                            <ul class="dropdown-menu">
+                                <li><a href="/admin/testimonialslider/create/">Add Testimonial Slider</a></li>
+                                <li><a href="/admin/testimonial/create/">Add Testimonial</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <br>
+        </header>
+        <br>
 
-    <section id="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="list-group">
-                        <a href="/admin" class="list-group-item
-                         @if($indexActiveView == 0)
-                                active
-                         @endif
-                                "><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                            Dashboard</a>
-                        <a href="/admin/testimonialslider" class="list-group-item
-                          @if($indexActiveView == 1)
-                                active
-                          @endif
-                                "><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Testimonial Slider<span
-                                    class="badge"></span></a>
-                        <a href="/admin/testimonial" class="list-group-item
-                          @if($indexActiveView == 2)
-                                active
-                          @endif
-                                "><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Testimonial<span
-                                    class="badge">126</span></a>
-                        <a href="/admin/image" class="list-group-item
-                          @if($indexActiveView == 3)
-                                active
-                          @endif
-                                "><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Image<span
-                                    class="badge">12</span></a>
+        <section id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="list-group">
+                            <a href="/admin" class="list-group-item
+                             @if($indexActiveView == 0)
+                                    active
+                             @endif
+                                    "><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                                Dashboard</a>
+                            <a href="/admin/testimonialslider" class="list-group-item
+                              @if($indexActiveView == 1)
+                                    active
+                              @endif
+                                    "><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Testimonial Slider<span
+                                        class="badge"></span></a>
+                            <a href="/admin/testimonial" class="list-group-item
+                              @if($indexActiveView == 2)
+                                    active
+                              @endif
+                                    "><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Testimonial<span
+                                        class="badge">126</span></a>
+                        </div>
                     </div>
+
+                    @yield('content')
                 </div>
-
-                @yield('content')
             </div>
-        </div>
-    </section>
-
+        </section>
     </div>
+
     <footer id="footer">
         <p>Copyright : Tania Sernivka<br>2019</p>
     </footer>

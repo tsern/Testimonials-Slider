@@ -23,9 +23,7 @@
                             {{Session::get('success')}}
                         </div>
                     @endif
-                    {{--<input method="POST" action="{{ route('testimonials.store') }}"  role="form">--}}
-                    {{--<form action="{{ url('task') }}" method="POST" class="form-horizontal"></form>--}}
-                    <form method="POST" action="{{ route('testimonial.store') }}"  role="form">
+                    <form method="POST" action="{{ route('testimonial.store') }}"  role="form" enctype="multipart/form-data">
                     {{ csrf_field() }}
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
@@ -91,20 +89,10 @@
                             </div>
                         </div>
 
-                        {{--<div class="row">--}}
-                            {{--<div class="col-xs-6 col-sm-6 col-md-6">--}}
-                                {{--<div class="form-group {{ $errors->has('file') ? 'has-error' : ''}}">--}}
-                                    {{--<label for="file" class="control-label">{{ 'Upload image' }}</label>--}}
-                                    {{--<input class="form-control" name="file" type="file" id="file" value="{{ isset($testimonial->file) ? $testimonial->file : ''}}" >--}}
-                                    {{--{!! $errors->first('file', '<p class="help-block">:message</p>') !!}--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="image" class="form-control input-sm" placeholder="image url">
+                                    <input type="file" name="image">
                                 </div>
                             </div>
                         </div>
@@ -124,6 +112,10 @@
                             </div>
                         </div>
                     </form>
+
+                        @isset ($path)
+                            <img class="img-fluid" src="{{ asset('/storage/' . $path) }}" alt="">
+                        @endisset
                 </table>
             </div>
         </div>

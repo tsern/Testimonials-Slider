@@ -45,20 +45,6 @@ class TestimonialSliderController extends Controller
                 'indexActiveView' => 1]);
     }
 
-//    public function show()
-//    {
-//        if (!Auth::check() || !Auth::user()->isAdmin())
-//        {
-//            return redirect()->guest('login');
-//        }
-//
-//        $testimonials = TestimonialSlider::all();
-//        return view('admin.TestimonialSlider.show',
-//        ['testimonials' => $testimonials,
-//         'viewTitle' => 'Testimonial Slider',
-//         'indexActiveView' => 1]);
-//    }
-
     public function store(Request $request)
     {
         if (!Auth::check() || !Auth::user()->isAdmin())

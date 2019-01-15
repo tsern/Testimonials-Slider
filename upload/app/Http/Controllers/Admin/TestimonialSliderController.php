@@ -9,10 +9,8 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Support\Facades\Auth;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
 use App\TestimonialSlider;
 
 
@@ -20,11 +18,6 @@ class TestimonialSliderController extends Controller
 {
     public function index()
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         $testimonials = TestimonialSlider::all();
 
         return view('admin.TestimonialSlider.index',
@@ -35,11 +28,6 @@ class TestimonialSliderController extends Controller
 
     public function create()
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         return view('admin.TestimonialSlider.create',
             [  'viewTitle' => 'Testimonial Slider',
                 'indexActiveView' => 1]);
@@ -47,11 +35,6 @@ class TestimonialSliderController extends Controller
 
     public function store(Request $request)
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         $id = Auth::id();
 
         $this->validate($request, [
@@ -73,11 +56,6 @@ class TestimonialSliderController extends Controller
 
     public function update(Request $request, $id)
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         $user_id = Auth::id();
 
         $this->validate($request, [
@@ -95,11 +73,6 @@ class TestimonialSliderController extends Controller
 
     public function edit($id)
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         $testimonial = TestimonialSlider::find($id);
         return view('admin.TestimonialSlider.edit',
             ['viewTitle' => 'TestimonialSlider',
@@ -109,11 +82,6 @@ class TestimonialSliderController extends Controller
 
     public function destroy($id)
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         TestimonialSlider::find($id)->delete();
         return redirect()->route('testimonialslider.index')
             ->with('success', 'Task deleted successfully');

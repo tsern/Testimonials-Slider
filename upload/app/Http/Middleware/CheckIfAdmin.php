@@ -15,10 +15,10 @@ class CheckIfAdmin
 {
     public function handle($request, Closure $next)
     {
-        if (Auth::check() && Auth::user()->isAdmin()) {
+        if (Auth::check() && Auth::user()->isAdmin()==true) {
             return $next($request);
         }
 
-        return redirect('admin/login');
+        return redirect('/login');
     }
 }

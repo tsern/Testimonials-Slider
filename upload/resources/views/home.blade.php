@@ -37,7 +37,7 @@
                                         <div class="col-sm-3 text-center">
                                             @if($testimonial['show_image']==1)
                                             <img class="img-circle"
-                                                 src={{$testimonial['img']}} style="width:100px;height:100px;">
+                                                 src={{url('storage/'.$testimonial['image'])}} style="width:100px;height:100px;">
                                             @endif
                                         </div>
                                         <div class="col-sm-9">

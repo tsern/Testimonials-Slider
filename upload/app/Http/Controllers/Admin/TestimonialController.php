@@ -10,7 +10,6 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Testimonial;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 
@@ -18,14 +17,7 @@ class TestimonialController extends Controller
 {
     public function index()
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         $testimonials = Testimonial::all();
-
-
         return view('admin.Testimonial.index',
             ['testimonials' => $testimonials,
                 'viewTitle' => 'Testimonial',
@@ -34,11 +26,6 @@ class TestimonialController extends Controller
 
     public function store(Request $request)
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         $this->validate($request, [
             'title' => 'required|max:100',
         ]);
@@ -58,11 +45,6 @@ class TestimonialController extends Controller
 
     public function create()
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         return view('admin.Testimonial.create',
             [  'viewTitle' => 'Testimonial',
                 'indexActiveView' => 2]);
@@ -70,11 +52,6 @@ class TestimonialController extends Controller
 
     public function edit($id)
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         $testimonial = Testimonial::find($id);
         return view('admin.Testimonial.edit',
             ['viewTitle' => 'Testimonial',
@@ -84,11 +61,6 @@ class TestimonialController extends Controller
 
     public function update(Request $request, $id)
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         $this->validate($request, [
             'title' => 'required'
         ]);
@@ -102,11 +74,6 @@ class TestimonialController extends Controller
 
     public function destroy($id)
     {
-        if (!Auth::check() || !Auth::user()->isAdmin())
-        {
-            return redirect()->guest('login');
-        }
-
         Testimonial::find($id)->delete();
         return redirect()->route('testimonial.index')
             ->with('success', 'Task deleted successfully');

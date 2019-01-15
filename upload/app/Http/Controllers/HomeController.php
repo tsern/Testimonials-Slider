@@ -28,6 +28,7 @@ class HomeController extends Controller
     public function index()
     {
         $isAdmin = Auth::check() && Auth::user()->isAdmin();
+
         $testimonials = Testimonial::all();
 
         $testimonialsData = array();
@@ -52,7 +53,7 @@ class HomeController extends Controller
             }
 
 
-            $t['img'] = $testimonial->image;
+            $t['image'] = $testimonial->image;
             $t['name'] = $testimonial->name.' '.$testimonial->lastname;
             $t['desc'] = $testimonial->description;
             $t['company'] = $testimonial->company;
